@@ -90,6 +90,12 @@
     <Compile Include="Simuladores\frmBeneficioPericulosidade.Designer.cs">
       <DependentUpon>frmBeneficioPericulosidade.cs</DependentUpon>
     </Compile>
+    <Compile Include="Simuladores\frmBeneficioPis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simuladores\frmBeneficioPis.Designer.cs">
+      <DependentUpon>frmBeneficioPis.cs</DependentUpon>
+    </Compile>
     <Compile Include="Simuladores\frmBeneficioSeguroDesemprego.cs">
       <SubType>Form</SubType>
     </Compile>
