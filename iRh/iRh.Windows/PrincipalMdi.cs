@@ -16,5 +16,10 @@ namespace iRh.Windows
         {
             InitializeComponent();
         }
+
+        private void PrincipalMdi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
