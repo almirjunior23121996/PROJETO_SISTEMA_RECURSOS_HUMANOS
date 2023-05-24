@@ -92,5 +92,7 @@ namespace iRh.Windows
             form.MdiParent = this;
             form.Show();
         }
+
+   
     }
 }

@@ -65,11 +65,12 @@
             this.funcionáriosToolStripMenuItem.Name = "funcionáriosToolStripMenuItem";
             this.funcionáriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.funcionáriosToolStripMenuItem.Text = "Cadastros";
+          
             // 
             // menuCadastroFuncionario
             // 
             this.menuCadastroFuncionario.Name = "menuCadastroFuncionario";
-            this.menuCadastroFuncionario.Size = new System.Drawing.Size(142, 22);
+            this.menuCadastroFuncionario.Size = new System.Drawing.Size(180, 22);
             this.menuCadastroFuncionario.Text = "Funcionarios";
             // 
             // simuladoresToolStripMenuItem
@@ -89,6 +90,7 @@
             this.simuladoresToolStripMenuItem.Name = "simuladoresToolStripMenuItem";
             this.simuladoresToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
             this.simuladoresToolStripMenuItem.Text = "Simuladores";
+         
             // 
             // menuDescontoInss
             // 

@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using iRh.Windows.Core;
+using System;
 using System.Windows.Forms;
 
 namespace iRh.Windows.Simuladores
@@ -29,12 +23,13 @@ namespace iRh.Windows.Simuladores
             try
             {
                 var salario = double.Parse(txtSalarioBase.Text);
-
+                var descontonss = Inss.Calcula(salario);
+                lblResultado.Text = descontonss.ToString("C");
             }
             catch (Exception)
             {
                 MessageBox.Show("Informe um valor de salário válido, ex.3500", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                throw;
+            
             }
         
         }
