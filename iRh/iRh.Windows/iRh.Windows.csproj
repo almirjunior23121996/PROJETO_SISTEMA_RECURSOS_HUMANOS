@@ -133,6 +133,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Simuladores\frmBeneficioFgts.resx">
+      <DependentUpon>frmBeneficioFgts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simuladores\frmBeneficioValeTransporte.resx">
+      <DependentUpon>frmBeneficioValeTransporte.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Simuladores\frmDescontoInss.resx">
       <DependentUpon>frmDescontoInss.cs</DependentUpon>
     </EmbeddedResource>

@@ -16,5 +16,15 @@ namespace iRh.Windows.Simuladores
         {
             InitializeComponent();
         }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            var multa = double.Parse (txtValorEmConta.Text) * 40.00 / 100.00;
+            var multafinal = 
+            lblResultado.Text = 
+
+          
+            
+        }
     }
 }
