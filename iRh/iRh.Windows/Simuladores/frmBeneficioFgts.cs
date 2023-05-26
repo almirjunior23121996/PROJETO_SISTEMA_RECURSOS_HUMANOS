@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using iRh.Windows.Core;
+
 
 namespace iRh.Windows.Simuladores
 {
@@ -17,14 +12,29 @@ namespace iRh.Windows.Simuladores
             InitializeComponent();
         }
 
-        private void btnCalcular_Click(object sender, EventArgs e)
+        private void btnCalcularFtgs_Click(object sender, EventArgs e)
         {
-            var multa = double.Parse (txtValorEmConta.Text) * 40.00 / 100.00;
-            var multafinal = 
-            lblResultado.Text = 
-
-          
-            
+            if(string.IsNullOrEmpty(txtValorEmConta.Text))
+            {
+                MessageBox.Show("Informe um salario.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtValorEmConta.Focus();
+                return;
+            }else
+            {
+                try
+                {
+                    var salarioValorEmConta = double.Parse(txtValorEmConta.Text);
+                    var contribuicaoFgts = Fgts.Calcula(salarioValorEmConta);
+                    lblResultado.Text = contribuicaoFgts.ToString();
+                    panelResultado.Show();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Informe um salario válido.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    
+                    
+                }
+            }
         }
     }
 }

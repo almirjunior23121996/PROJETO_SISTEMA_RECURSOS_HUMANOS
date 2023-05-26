@@ -1,6 +1,7 @@
 ﻿namespace iRh.Windows.Core
 {
-    public static class Inss
+    
+    class Inss
     {
         const double Faixa01 = 1302.0;
         const double Faixa02 = 2571.29;

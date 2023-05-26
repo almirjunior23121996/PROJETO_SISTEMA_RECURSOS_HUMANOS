@@ -52,7 +52,7 @@
             // lblValorPassagem
             // 
             this.lblValorPassagem.AutoSize = true;
-            this.lblValorPassagem.Location = new System.Drawing.Point(12, 84);
+            this.lblValorPassagem.Location = new System.Drawing.Point(12, 80);
             this.lblValorPassagem.Name = "lblValorPassagem";
             this.lblValorPassagem.Size = new System.Drawing.Size(166, 13);
             this.lblValorPassagem.TabIndex = 1;
@@ -69,7 +69,7 @@
             // 
             // txtSalario
             // 
-            this.txtSalario.Location = new System.Drawing.Point(15, 42);
+            this.txtSalario.Location = new System.Drawing.Point(15, 25);
             this.txtSalario.Name = "txtSalario";
             this.txtSalario.Size = new System.Drawing.Size(100, 20);
             this.txtSalario.TabIndex = 3;
@@ -80,6 +80,7 @@
             this.txtValorPassagem.Name = "txtValorPassagem";
             this.txtValorPassagem.Size = new System.Drawing.Size(100, 20);
             this.txtValorPassagem.TabIndex = 4;
+          
             // 
             // txtPassagens
             // 
@@ -96,7 +97,7 @@
             this.btnCalcular.TabIndex = 6;
             this.btnCalcular.Text = "CALCULAR";
             this.btnCalcular.UseVisualStyleBackColor = true;
-            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+   
             // 
             // panel1
             // 

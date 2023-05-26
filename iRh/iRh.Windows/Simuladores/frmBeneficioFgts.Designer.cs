@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBeneficioFgts));
             this.lblValorEmConta = new System.Windows.Forms.Label();
             this.txtValorEmConta = new System.Windows.Forms.TextBox();
-            this.btnCalcular = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnCalcularFtgs = new System.Windows.Forms.Button();
+            this.panelResultado = new System.Windows.Forms.Panel();
             this.lblResultado = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.panelResultado.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblValorEmConta
@@ -53,24 +53,25 @@
             this.txtValorEmConta.Size = new System.Drawing.Size(100, 20);
             this.txtValorEmConta.TabIndex = 1;
             // 
-            // btnCalcular
+            // btnCalcularFtgs
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(16, 119);
-            this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(75, 23);
-            this.btnCalcular.TabIndex = 2;
-            this.btnCalcular.Text = "CALCULAR";
-            this.btnCalcular.UseVisualStyleBackColor = true;
-            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            this.btnCalcularFtgs.Location = new System.Drawing.Point(17, 95);
+            this.btnCalcularFtgs.Name = "btnCalcularFtgs";
+            this.btnCalcularFtgs.Size = new System.Drawing.Size(99, 23);
+            this.btnCalcularFtgs.TabIndex = 2;
+            this.btnCalcularFtgs.Text = "CALCULAR FGTS";
+            this.btnCalcularFtgs.UseVisualStyleBackColor = true;
+            this.btnCalcularFtgs.Click += new System.EventHandler(this.btnCalcularFtgs_Click);
             // 
-            // panel1
+            // panelResultado
             // 
-            this.panel1.BackColor = System.Drawing.Color.Blue;
-            this.panel1.Controls.Add(this.lblResultado);
-            this.panel1.Location = new System.Drawing.Point(16, 177);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 100);
-            this.panel1.TabIndex = 3;
+            this.panelResultado.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panelResultado.Controls.Add(this.lblResultado);
+            this.panelResultado.Location = new System.Drawing.Point(17, 124);
+            this.panelResultado.Name = "panelResultado";
+            this.panelResultado.Size = new System.Drawing.Size(200, 100);
+            this.panelResultado.TabIndex = 3;
+            this.panelResultado.Visible = false;
             // 
             // lblResultado
             // 
@@ -86,15 +87,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnCalcular);
+            this.Controls.Add(this.panelResultado);
+            this.Controls.Add(this.btnCalcularFtgs);
             this.Controls.Add(this.txtValorEmConta);
             this.Controls.Add(this.lblValorEmConta);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBeneficioFgts";
             this.Text = "frmBeneficioFgts";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelResultado.ResumeLayout(false);
+            this.panelResultado.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -104,8 +105,8 @@
 
         private System.Windows.Forms.Label lblValorEmConta;
         private System.Windows.Forms.TextBox txtValorEmConta;
-        private System.Windows.Forms.Button btnCalcular;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnCalcularFtgs;
+        private System.Windows.Forms.Panel panelResultado;
         private System.Windows.Forms.Label lblResultado;
     }
 }

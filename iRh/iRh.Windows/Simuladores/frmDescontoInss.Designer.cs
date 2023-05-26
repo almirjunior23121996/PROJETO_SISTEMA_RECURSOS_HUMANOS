@@ -53,6 +53,7 @@
             this.txtSalarioBase.Name = "txtSalarioBase";
             this.txtSalarioBase.Size = new System.Drawing.Size(100, 20);
             this.txtSalarioBase.TabIndex = 2;
+
             // 
             // lblSalario
             // 
