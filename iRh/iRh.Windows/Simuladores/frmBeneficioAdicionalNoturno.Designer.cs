@@ -33,9 +33,9 @@
             this.txtSalarioTotal = new System.Windows.Forms.TextBox();
             this.txtHorasNoturnasFeitasNoMes = new System.Windows.Forms.TextBox();
             this.btnCalcular = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelResultado = new System.Windows.Forms.Panel();
             this.lblResultado = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.panelResultado.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblSalario
@@ -78,15 +78,15 @@
             this.btnCalcular.TabIndex = 4;
             this.btnCalcular.Text = "CALCULAR";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
-            // panel1
+            // panelResultado
             // 
-            this.panel1.Controls.Add(this.lblResultado);
-            this.panel1.Location = new System.Drawing.Point(19, 272);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 100);
-            this.panel1.TabIndex = 5;
-          
+            this.panelResultado.Controls.Add(this.lblResultado);
+            this.panelResultado.Location = new System.Drawing.Point(19, 272);
+            this.panelResultado.Name = "panelResultado";
+            this.panelResultado.Size = new System.Drawing.Size(200, 100);
+            this.panelResultado.TabIndex = 5;
             // 
             // lblResultado
             // 
@@ -102,7 +102,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelResultado);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txtHorasNoturnasFeitasNoMes);
             this.Controls.Add(this.txtSalarioTotal);
@@ -110,8 +110,8 @@
             this.Controls.Add(this.lblSalario);
             this.Name = "frmBeneficioAdicionalNoturno";
             this.Text = "frmBeneficioAdicionalNoturno";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelResultado.ResumeLayout(false);
+            this.panelResultado.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,7 +124,7 @@
         private System.Windows.Forms.TextBox txtSalarioTotal;
         private System.Windows.Forms.TextBox txtHorasNoturnasFeitasNoMes;
         private System.Windows.Forms.Button btnCalcular;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelResultado;
         private System.Windows.Forms.Label lblResultado;
     }
 }
