@@ -56,7 +56,6 @@
     <Compile Include="Core\Fgts.cs" />
     <Compile Include="Core\Inss.cs" />
     <Compile Include="Core\Irrf.cs" />
-    <Compile Include="Core\SeguroDesemprego.cs" />
     <Compile Include="PrincipalMdi.cs">
       <SubType>Form</SubType>
     </Compile>

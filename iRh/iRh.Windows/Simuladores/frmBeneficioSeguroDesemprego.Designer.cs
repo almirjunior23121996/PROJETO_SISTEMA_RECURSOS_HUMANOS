@@ -75,22 +75,22 @@
             this.panel1.Controls.Add(this.lblResultado);
             this.panel1.Location = new System.Drawing.Point(16, 104);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(100, 93);
+            this.panel1.Size = new System.Drawing.Size(345, 93);
             this.panel1.TabIndex = 4;
+            this.panel1.Visible = false;
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(36, 40);
+            this.lblResultado.Location = new System.Drawing.Point(32, 40);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(35, 13);
             this.lblResultado.TabIndex = 0;
             this.lblResultado.Text = "label3";
-            this.lblResultado.Visible = false;
             // 
             // buttonResultado
             // 
-            this.buttonResultado.Location = new System.Drawing.Point(122, 174);
+            this.buttonResultado.Location = new System.Drawing.Point(286, 203);
             this.buttonResultado.Name = "buttonResultado";
             this.buttonResultado.Size = new System.Drawing.Size(75, 23);
             this.buttonResultado.TabIndex = 5;
@@ -102,7 +102,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(408, 250);
+            this.ClientSize = new System.Drawing.Size(371, 230);
             this.Controls.Add(this.buttonResultado);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtMesesTrabalhados);
