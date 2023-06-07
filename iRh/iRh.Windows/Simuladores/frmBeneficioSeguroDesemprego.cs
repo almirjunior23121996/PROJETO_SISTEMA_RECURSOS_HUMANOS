@@ -102,6 +102,7 @@ namespace iRh.Windows.Simuladores
                 MessageBox.Show("Informe um Valor Valido, Ex:1,2,3,4", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-       
+
+      
     }
 }

@@ -58,16 +58,16 @@
             // 
             // txtVezesSolicitados
             // 
-            this.txtVezesSolicitados.Location = new System.Drawing.Point(16, 30);
+            this.txtVezesSolicitados.Location = new System.Drawing.Point(16, 29);
             this.txtVezesSolicitados.Name = "txtVezesSolicitados";
-            this.txtVezesSolicitados.Size = new System.Drawing.Size(100, 20);
+            this.txtVezesSolicitados.Size = new System.Drawing.Size(45, 20);
             this.txtVezesSolicitados.TabIndex = 2;
             // 
             // txtMesesTrabalhados
             // 
             this.txtMesesTrabalhados.Location = new System.Drawing.Point(16, 78);
             this.txtMesesTrabalhados.Name = "txtMesesTrabalhados";
-            this.txtMesesTrabalhados.Size = new System.Drawing.Size(100, 20);
+            this.txtMesesTrabalhados.Size = new System.Drawing.Size(45, 20);
             this.txtMesesTrabalhados.TabIndex = 3;
             // 
             // panel1

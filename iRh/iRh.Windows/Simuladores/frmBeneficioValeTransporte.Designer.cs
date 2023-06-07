@@ -37,6 +37,7 @@
             this.btnCalcular = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblResultado = new System.Windows.Forms.Label();
+            this.lblResultado2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +53,7 @@
             // lblValorPassagem
             // 
             this.lblValorPassagem.AutoSize = true;
-            this.lblValorPassagem.Location = new System.Drawing.Point(12, 80);
+            this.lblValorPassagem.Location = new System.Drawing.Point(12, 63);
             this.lblValorPassagem.Name = "lblValorPassagem";
             this.lblValorPassagem.Size = new System.Drawing.Size(166, 13);
             this.lblValorPassagem.TabIndex = 1;
@@ -61,7 +62,7 @@
             // lblPassagens
             // 
             this.lblPassagens.AutoSize = true;
-            this.lblPassagens.Location = new System.Drawing.Point(15, 164);
+            this.lblPassagens.Location = new System.Drawing.Point(9, 117);
             this.lblPassagens.Name = "lblPassagens";
             this.lblPassagens.Size = new System.Drawing.Size(237, 13);
             this.lblPassagens.TabIndex = 2;
@@ -69,58 +70,68 @@
             // 
             // txtSalario
             // 
-            this.txtSalario.Location = new System.Drawing.Point(15, 25);
+            this.txtSalario.Location = new System.Drawing.Point(12, 25);
             this.txtSalario.Name = "txtSalario";
-            this.txtSalario.Size = new System.Drawing.Size(100, 20);
+            this.txtSalario.Size = new System.Drawing.Size(66, 20);
             this.txtSalario.TabIndex = 3;
             // 
             // txtValorPassagem
             // 
-            this.txtValorPassagem.Location = new System.Drawing.Point(15, 119);
+            this.txtValorPassagem.Location = new System.Drawing.Point(12, 79);
             this.txtValorPassagem.Name = "txtValorPassagem";
-            this.txtValorPassagem.Size = new System.Drawing.Size(100, 20);
+            this.txtValorPassagem.Size = new System.Drawing.Size(66, 20);
             this.txtValorPassagem.TabIndex = 4;
-          
             // 
             // txtPassagens
             // 
-            this.txtPassagens.Location = new System.Drawing.Point(18, 198);
+            this.txtPassagens.Location = new System.Drawing.Point(12, 133);
             this.txtPassagens.Name = "txtPassagens";
-            this.txtPassagens.Size = new System.Drawing.Size(100, 20);
+            this.txtPassagens.Size = new System.Drawing.Size(66, 20);
             this.txtPassagens.TabIndex = 5;
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(125, 236);
+            this.btnCalcular.Location = new System.Drawing.Point(282, 212);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(75, 23);
             this.btnCalcular.TabIndex = 6;
             this.btnCalcular.Text = "CALCULAR";
             this.btnCalcular.UseVisualStyleBackColor = true;
-   
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lblResultado2);
             this.panel1.Controls.Add(this.lblResultado);
-            this.panel1.Location = new System.Drawing.Point(18, 299);
+            this.panel1.Location = new System.Drawing.Point(0, 159);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.Size = new System.Drawing.Size(276, 76);
             this.panel1.TabIndex = 7;
+            this.panel1.Visible = false;
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(75, 43);
+            this.lblResultado.Location = new System.Drawing.Point(29, 27);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(35, 13);
             this.lblResultado.TabIndex = 0;
             this.lblResultado.Text = "label4";
             // 
+            // lblResultado2
+            // 
+            this.lblResultado2.AutoSize = true;
+            this.lblResultado2.Location = new System.Drawing.Point(29, 53);
+            this.lblResultado2.Name = "lblResultado2";
+            this.lblResultado2.Size = new System.Drawing.Size(35, 13);
+            this.lblResultado2.TabIndex = 1;
+            this.lblResultado2.Text = "label1";
+            // 
             // frmBeneficioValeTransporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(545, 450);
+            this.ClientSize = new System.Drawing.Size(358, 238);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txtPassagens);
@@ -149,5 +160,6 @@
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblResultado;
+        private System.Windows.Forms.Label lblResultado2;
     }
 }
