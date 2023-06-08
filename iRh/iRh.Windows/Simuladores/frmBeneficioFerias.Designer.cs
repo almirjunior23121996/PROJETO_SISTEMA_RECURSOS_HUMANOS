@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBeneficioFerias));
             this.label1 = new System.Windows.Forms.Label();
             this.txtSalario = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,58 +42,69 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(15, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 13);
+            this.label1.Size = new System.Drawing.Size(162, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "INFORME O SEU SALÁRIO";
             // 
             // txtSalario
             // 
-            this.txtSalario.Location = new System.Drawing.Point(16, 29);
+            this.txtSalario.Location = new System.Drawing.Point(19, 29);
+            this.txtSalario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtSalario.Name = "txtSalario";
-            this.txtSalario.Size = new System.Drawing.Size(60, 20);
+            this.txtSalario.Size = new System.Drawing.Size(69, 20);
             this.txtSalario.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 68);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(19, 68);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(407, 13);
+            this.label2.Size = new System.Drawing.Size(474, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "QUANTOS DIAS VOCÊ VAI VENDER DE FÉRIAS? (LIMITE MÁXIMO DE 10 DIAS):";
             // 
             // txtVendaFerias
             // 
-            this.txtVendaFerias.Location = new System.Drawing.Point(16, 84);
+            this.txtVendaFerias.Location = new System.Drawing.Point(19, 84);
+            this.txtVendaFerias.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtVendaFerias.Name = "txtVendaFerias";
-            this.txtVendaFerias.Size = new System.Drawing.Size(60, 20);
+            this.txtVendaFerias.Size = new System.Drawing.Size(69, 20);
             this.txtVendaFerias.TabIndex = 3;
             // 
             // panel1Resultado
             // 
+            this.panel1Resultado.BackColor = System.Drawing.Color.Silver;
             this.panel1Resultado.Controls.Add(this.lblResultado);
-            this.panel1Resultado.Location = new System.Drawing.Point(16, 139);
+            this.panel1Resultado.Location = new System.Drawing.Point(18, 174);
+            this.panel1Resultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1Resultado.Name = "panel1Resultado";
-            this.panel1Resultado.Size = new System.Drawing.Size(297, 100);
+            this.panel1Resultado.Size = new System.Drawing.Size(346, 41);
             this.panel1Resultado.TabIndex = 4;
             this.panel1Resultado.Visible = false;
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(59, 47);
+            this.lblResultado.Location = new System.Drawing.Point(76, 16);
+            this.lblResultado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(35, 13);
+            this.lblResultado.Size = new System.Drawing.Size(41, 13);
             this.lblResultado.TabIndex = 0;
             this.lblResultado.Text = "label3";
             // 
             // button1Resultado
             // 
-            this.button1Resultado.Location = new System.Drawing.Point(319, 216);
+            this.button1Resultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1Resultado.Location = new System.Drawing.Point(372, 216);
+            this.button1Resultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1Resultado.Name = "button1Resultado";
-            this.button1Resultado.Size = new System.Drawing.Size(75, 23);
+            this.button1Resultado.Size = new System.Drawing.Size(88, 23);
             this.button1Resultado.TabIndex = 5;
             this.button1Resultado.Text = "CALCULAR";
             this.button1Resultado.UseVisualStyleBackColor = true;
@@ -100,17 +112,20 @@
             // 
             // frmBeneficioFerias
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 244);
+            this.ClientSize = new System.Drawing.Size(491, 245);
             this.Controls.Add(this.button1Resultado);
             this.Controls.Add(this.panel1Resultado);
             this.Controls.Add(this.txtVendaFerias);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmBeneficioFerias";
-            this.Text = "frmBeneficioFerias";
+            this.Text = "CALCULO FÉRIAS";
             this.panel1Resultado.ResumeLayout(false);
             this.panel1Resultado.PerformLayout();
             this.ResumeLayout(false);

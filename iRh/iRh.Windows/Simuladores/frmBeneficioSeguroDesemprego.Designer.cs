@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBeneficioSeguroDesemprego));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtVezesSolicitados = new System.Windows.Forms.TextBox();
@@ -41,18 +42,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(303, 13);
+            this.label1.Size = new System.Drawing.Size(351, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "INFORME QUANTAS VEZES JÁ SOLICITOU O BENEFICIO?:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(13, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(348, 13);
+            this.label2.Size = new System.Drawing.Size(401, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = " INFORME MESES DE CARTEIRA ASSINADA NO EMPREGO ATUAL:";
             // 
@@ -82,15 +85,17 @@
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblResultado.Location = new System.Drawing.Point(32, 40);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(35, 13);
+            this.lblResultado.Size = new System.Drawing.Size(41, 13);
             this.lblResultado.TabIndex = 0;
             this.lblResultado.Text = "label3";
             // 
             // buttonResultado
             // 
-            this.buttonResultado.Location = new System.Drawing.Point(286, 203);
+            this.buttonResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonResultado.Location = new System.Drawing.Point(339, 203);
             this.buttonResultado.Name = "buttonResultado";
             this.buttonResultado.Size = new System.Drawing.Size(75, 23);
             this.buttonResultado.TabIndex = 5;
@@ -102,13 +107,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(371, 230);
+            this.ClientSize = new System.Drawing.Size(417, 230);
             this.Controls.Add(this.buttonResultado);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtMesesTrabalhados);
             this.Controls.Add(this.txtVezesSolicitados);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBeneficioSeguroDesemprego";
             this.Text = "frmBeneficioSeguroDesemprego";
             this.panel1.ResumeLayout(false);

@@ -25,7 +25,7 @@ namespace iRh.Windows.Simuladores
                 {
                     var salarioValorEmConta = double.Parse(txtValorEmConta.Text);
                     var contribuicaoFgts = Fgts.Calcula(salarioValorEmConta);
-                    lblResultado.Text = contribuicaoFgts.ToString();
+                    lblResultado.Text = "O VALOR DA MULTA É DE: R$" + contribuicaoFgts.ToString("F2");
                     panelResultado.Show();
                 }
                 catch (Exception)

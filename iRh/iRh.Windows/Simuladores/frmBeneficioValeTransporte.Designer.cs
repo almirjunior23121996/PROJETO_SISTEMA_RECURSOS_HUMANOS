@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBeneficioValeTransporte));
             this.lblSalario = new System.Windows.Forms.Label();
             this.lblValorPassagem = new System.Windows.Forms.Label();
             this.lblPassagens = new System.Windows.Forms.Label();
@@ -36,64 +37,75 @@
             this.txtPassagens = new System.Windows.Forms.TextBox();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblResultado = new System.Windows.Forms.Label();
             this.lblResultado2 = new System.Windows.Forms.Label();
+            this.lblResultado = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblSalario
             // 
             this.lblSalario.AutoSize = true;
-            this.lblSalario.Location = new System.Drawing.Point(12, 9);
+            this.lblSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalario.Location = new System.Drawing.Point(14, 9);
+            this.lblSalario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSalario.Name = "lblSalario";
-            this.lblSalario.Size = new System.Drawing.Size(141, 13);
+            this.lblSalario.Size = new System.Drawing.Size(162, 13);
             this.lblSalario.TabIndex = 0;
             this.lblSalario.Text = "INFORME O SEU SALÁRIO";
             // 
             // lblValorPassagem
             // 
             this.lblValorPassagem.AutoSize = true;
-            this.lblValorPassagem.Location = new System.Drawing.Point(12, 63);
+            this.lblValorPassagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorPassagem.Location = new System.Drawing.Point(14, 63);
+            this.lblValorPassagem.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblValorPassagem.Name = "lblValorPassagem";
-            this.lblValorPassagem.Size = new System.Drawing.Size(166, 13);
+            this.lblValorPassagem.Size = new System.Drawing.Size(190, 13);
             this.lblValorPassagem.TabIndex = 1;
             this.lblValorPassagem.Text = "QUAL O VALOR DA PASSAGEM";
             // 
             // lblPassagens
             // 
             this.lblPassagens.AutoSize = true;
-            this.lblPassagens.Location = new System.Drawing.Point(9, 117);
+            this.lblPassagens.BackColor = System.Drawing.SystemColors.Control;
+            this.lblPassagens.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassagens.Location = new System.Drawing.Point(10, 117);
+            this.lblPassagens.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPassagens.Name = "lblPassagens";
-            this.lblPassagens.Size = new System.Drawing.Size(237, 13);
+            this.lblPassagens.Size = new System.Drawing.Size(272, 13);
             this.lblPassagens.TabIndex = 2;
             this.lblPassagens.Text = "QUANTIDADE DE PASSAGEM GASTA NO DIA";
             // 
             // txtSalario
             // 
-            this.txtSalario.Location = new System.Drawing.Point(12, 25);
+            this.txtSalario.Location = new System.Drawing.Point(14, 25);
+            this.txtSalario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtSalario.Name = "txtSalario";
-            this.txtSalario.Size = new System.Drawing.Size(66, 20);
+            this.txtSalario.Size = new System.Drawing.Size(76, 20);
             this.txtSalario.TabIndex = 3;
             // 
             // txtValorPassagem
             // 
-            this.txtValorPassagem.Location = new System.Drawing.Point(12, 79);
+            this.txtValorPassagem.Location = new System.Drawing.Point(14, 79);
+            this.txtValorPassagem.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtValorPassagem.Name = "txtValorPassagem";
-            this.txtValorPassagem.Size = new System.Drawing.Size(66, 20);
+            this.txtValorPassagem.Size = new System.Drawing.Size(76, 20);
             this.txtValorPassagem.TabIndex = 4;
             // 
             // txtPassagens
             // 
-            this.txtPassagens.Location = new System.Drawing.Point(12, 133);
+            this.txtPassagens.Location = new System.Drawing.Point(14, 133);
+            this.txtPassagens.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPassagens.Name = "txtPassagens";
-            this.txtPassagens.Size = new System.Drawing.Size(66, 20);
+            this.txtPassagens.Size = new System.Drawing.Size(76, 20);
             this.txtPassagens.TabIndex = 5;
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(282, 212);
+            this.btnCalcular.Location = new System.Drawing.Point(329, 212);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(75, 23);
+            this.btnCalcular.Size = new System.Drawing.Size(88, 23);
             this.btnCalcular.TabIndex = 6;
             this.btnCalcular.Text = "CALCULAR";
             this.btnCalcular.UseVisualStyleBackColor = true;
@@ -104,34 +116,38 @@
             this.panel1.Controls.Add(this.lblResultado2);
             this.panel1.Controls.Add(this.lblResultado);
             this.panel1.Location = new System.Drawing.Point(0, 159);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(276, 76);
+            this.panel1.Size = new System.Drawing.Size(322, 76);
             this.panel1.TabIndex = 7;
             this.panel1.Visible = false;
-            // 
-            // lblResultado
-            // 
-            this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(29, 27);
-            this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(35, 13);
-            this.lblResultado.TabIndex = 0;
-            this.lblResultado.Text = "label4";
             // 
             // lblResultado2
             // 
             this.lblResultado2.AutoSize = true;
-            this.lblResultado2.Location = new System.Drawing.Point(29, 53);
+            this.lblResultado2.Location = new System.Drawing.Point(34, 53);
+            this.lblResultado2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResultado2.Name = "lblResultado2";
-            this.lblResultado2.Size = new System.Drawing.Size(35, 13);
+            this.lblResultado2.Size = new System.Drawing.Size(41, 13);
             this.lblResultado2.TabIndex = 1;
             this.lblResultado2.Text = "label1";
             // 
+            // lblResultado
+            // 
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.Location = new System.Drawing.Point(34, 27);
+            this.lblResultado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(41, 13);
+            this.lblResultado.TabIndex = 0;
+            this.lblResultado.Text = "label4";
+            // 
             // frmBeneficioValeTransporte
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 238);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(418, 238);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txtPassagens);
@@ -140,8 +156,11 @@
             this.Controls.Add(this.lblPassagens);
             this.Controls.Add(this.lblValorPassagem);
             this.Controls.Add(this.lblSalario);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmBeneficioValeTransporte";
-            this.Text = "frmBeneficioValeTransporte";
+            this.Text = "BENEFICIO VALE  TRANSPORTE";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

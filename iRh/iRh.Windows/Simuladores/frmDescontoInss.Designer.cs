@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(lblSalarioBase));
             this.btnCalcular = new System.Windows.Forms.Button();
             this.txtSalarioBase = new System.Windows.Forms.TextBox();
             this.lblSalario = new System.Windows.Forms.Label();
@@ -39,9 +40,10 @@
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Location = new System.Drawing.Point(12, 108);
+            this.btnCalcular.Location = new System.Drawing.Point(227, 198);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(113, 23);
+            this.btnCalcular.Size = new System.Drawing.Size(132, 23);
             this.btnCalcular.TabIndex = 1;
             this.btnCalcular.Text = "CALCULAR iNSS";
             this.btnCalcular.UseVisualStyleBackColor = true;
@@ -49,58 +51,67 @@
             // 
             // txtSalarioBase
             // 
-            this.txtSalarioBase.Location = new System.Drawing.Point(12, 29);
+            this.txtSalarioBase.Location = new System.Drawing.Point(14, 29);
+            this.txtSalarioBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtSalarioBase.Name = "txtSalarioBase";
-            this.txtSalarioBase.Size = new System.Drawing.Size(100, 20);
+            this.txtSalarioBase.Size = new System.Drawing.Size(116, 20);
             this.txtSalarioBase.TabIndex = 2;
-
             // 
             // lblSalario
             // 
             this.lblSalario.AutoSize = true;
-            this.lblSalario.Location = new System.Drawing.Point(13, 13);
+            this.lblSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSalario.Location = new System.Drawing.Point(10, 13);
+            this.lblSalario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSalario.Name = "lblSalario";
-            this.lblSalario.Size = new System.Drawing.Size(84, 13);
+            this.lblSalario.Size = new System.Drawing.Size(161, 13);
             this.lblSalario.TabIndex = 3;
-            this.lblSalario.Text = "SALARIO BASE";
+            this.lblSalario.Text = " INFORME SEU SALARIO :";
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(-113, 213);
+            this.panel1.Location = new System.Drawing.Point(-132, 213);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(55, 100);
+            this.panel1.Size = new System.Drawing.Size(64, 100);
             this.panel1.TabIndex = 4;
             // 
             // panelResultado
             // 
-            this.panelResultado.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panelResultado.BackColor = System.Drawing.Color.Silver;
             this.panelResultado.Controls.Add(this.lblResultado);
-            this.panelResultado.Location = new System.Drawing.Point(16, 156);
+            this.panelResultado.Location = new System.Drawing.Point(13, 153);
+            this.panelResultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panelResultado.Name = "panelResultado";
-            this.panelResultado.Size = new System.Drawing.Size(397, 136);
+            this.panelResultado.Size = new System.Drawing.Size(346, 39);
             this.panelResultado.TabIndex = 5;
+            this.panelResultado.Visible = false;
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(155, 63);
+            this.lblResultado.Location = new System.Drawing.Point(25, 15);
+            this.lblResultado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(65, 13);
+            this.lblResultado.Size = new System.Drawing.Size(77, 13);
             this.lblResultado.TabIndex = 6;
             this.lblResultado.Text = "lblResultado";
             // 
             // lblSalarioBase
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(425, 297);
+            this.ClientSize = new System.Drawing.Size(366, 221);
             this.Controls.Add(this.panelResultado);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblSalario);
             this.Controls.Add(this.txtSalarioBase);
             this.Controls.Add(this.btnCalcular);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "lblSalarioBase";
-            this.Text = "Desconto De Inss";
+            this.Text = "DESCONTO INSS";
             this.panelResultado.ResumeLayout(false);
             this.panelResultado.PerformLayout();
             this.ResumeLayout(false);

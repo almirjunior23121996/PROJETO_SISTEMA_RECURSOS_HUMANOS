@@ -24,8 +24,8 @@ namespace iRh.Windows.Simuladores
                 {
                     var SalarioaReceber = double.Parse(txtSalario.Text);
                     var TotalIrrf = Irrf.Calcula(SalarioaReceber);
-                    lblResultado.Text = TotalIrrf.ToString();
-                    panelResultado.Show();
+                    lblResultado.Text = "O VALOR DO SEU DESCONTO FOI DE: R$" + TotalIrrf.ToString("F2");
+                    panelResultado.Visible = true;
                 }
                 catch (Exception)
                 {
@@ -35,5 +35,7 @@ namespace iRh.Windows.Simuladores
                 }
             }
         }
+
+    
     }
 }

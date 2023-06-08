@@ -3,9 +3,9 @@ using System.Windows.Forms;
 using iRh.Windows.Core;            //sexto passo 
 namespace iRh.Windows.Simuladores
 {
-    public partial class frmBeneficioAdicionalNoturno : Form
+    public partial class BeneficioAdicionalNoturno : Form
     {
-        public frmBeneficioAdicionalNoturno()
+        public BeneficioAdicionalNoturno()
         {
             InitializeComponent();
         }
@@ -25,8 +25,8 @@ namespace iRh.Windows.Simuladores
                     var salarioValorEmConta = double.Parse(txtSalarioTotal.Text);//segundo passo
                     var HorasNoturnasFeitas = double.Parse(txtHorasNoturnasFeitasNoMes.Text);
                     var valorDoadicionalNoturno = AdicionalNoturno.Calcula(salarioValorEmConta, HorasNoturnasFeitas); //setimo passo
-                    lblResultado.Text = valorDoadicionalNoturno.ToString();
-                    panelResultado.Show();
+                    lblResultado.Text = "O VALOR DO ADICIONAL SERÁ DE: R$" + valorDoadicionalNoturno.ToString("F2");
+                    panelResultado.Visible = true;
 
                     panelResultado.Show();
                 }
@@ -37,6 +37,9 @@ namespace iRh.Windows.Simuladores
 
                 }
             }
-        }
+        } 
+
+        
     }
+       
 }

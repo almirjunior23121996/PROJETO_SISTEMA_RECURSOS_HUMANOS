@@ -24,7 +24,8 @@ namespace iRh.Windows.Simuladores
             {
                 var salario = double.Parse(txtSalarioBase.Text);
                 var descontonss = Inss.Calcula(salario);
-                lblResultado.Text = descontonss.ToString("C");
+                lblResultado.Text = "O VALOR DO SEU DESCONTO FOI DE : R$" + descontonss.ToString("F2");
+                panelResultado.Visible = true;
             }
             catch (Exception)
             {

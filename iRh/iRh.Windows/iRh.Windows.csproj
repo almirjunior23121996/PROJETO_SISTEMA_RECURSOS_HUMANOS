@@ -54,8 +54,10 @@
     </Compile>
     <Compile Include="Core\AdicionalNoturno.cs" />
     <Compile Include="Core\Fgts.cs" />
+    <Compile Include="Core\HoraExtra.cs" />
     <Compile Include="Core\Inss.cs" />
     <Compile Include="Core\Irrf.cs" />
+    <Compile Include="Core\Periculosidade.cs" />
     <Compile Include="Core\Pis.cs" />
     <Compile Include="PrincipalMdi.cs">
       <SubType>Form</SubType>
@@ -148,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Simuladores\frmBeneficioHoraExtra.resx">
       <DependentUpon>frmBeneficioHoraExtra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simuladores\frmBeneficioPericulosidade.resx">
+      <DependentUpon>frmBeneficioPericulosidade.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Simuladores\frmBeneficioPis.resx">
       <DependentUpon>frmBeneficioPis.cs</DependentUpon>

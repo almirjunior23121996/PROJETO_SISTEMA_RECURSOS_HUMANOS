@@ -40,24 +40,29 @@
             // lblValorEmConta
             // 
             this.lblValorEmConta.AutoSize = true;
-            this.lblValorEmConta.Location = new System.Drawing.Point(13, 13);
+            this.lblValorEmConta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorEmConta.Location = new System.Drawing.Point(15, 13);
+            this.lblValorEmConta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblValorEmConta.Name = "lblValorEmConta";
-            this.lblValorEmConta.Size = new System.Drawing.Size(253, 13);
+            this.lblValorEmConta.Size = new System.Drawing.Size(291, 13);
             this.lblValorEmConta.TabIndex = 0;
             this.lblValorEmConta.Text = "INFORME O VALOR TOTAL EM CONTA DO FGTS";
             // 
             // txtValorEmConta
             // 
-            this.txtValorEmConta.Location = new System.Drawing.Point(16, 50);
+            this.txtValorEmConta.Location = new System.Drawing.Point(19, 29);
+            this.txtValorEmConta.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtValorEmConta.Name = "txtValorEmConta";
-            this.txtValorEmConta.Size = new System.Drawing.Size(100, 20);
+            this.txtValorEmConta.Size = new System.Drawing.Size(116, 20);
             this.txtValorEmConta.TabIndex = 1;
             // 
             // btnCalcularFtgs
             // 
-            this.btnCalcularFtgs.Location = new System.Drawing.Point(17, 95);
+            this.btnCalcularFtgs.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcularFtgs.Location = new System.Drawing.Point(261, 201);
+            this.btnCalcularFtgs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCalcularFtgs.Name = "btnCalcularFtgs";
-            this.btnCalcularFtgs.Size = new System.Drawing.Size(99, 23);
+            this.btnCalcularFtgs.Size = new System.Drawing.Size(115, 23);
             this.btnCalcularFtgs.TabIndex = 2;
             this.btnCalcularFtgs.Text = "CALCULAR FGTS";
             this.btnCalcularFtgs.UseVisualStyleBackColor = true;
@@ -65,35 +70,39 @@
             // 
             // panelResultado
             // 
-            this.panelResultado.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panelResultado.BackColor = System.Drawing.Color.Silver;
             this.panelResultado.Controls.Add(this.lblResultado);
-            this.panelResultado.Location = new System.Drawing.Point(17, 124);
+            this.panelResultado.Location = new System.Drawing.Point(19, 163);
+            this.panelResultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panelResultado.Name = "panelResultado";
-            this.panelResultado.Size = new System.Drawing.Size(200, 100);
+            this.panelResultado.Size = new System.Drawing.Size(233, 36);
             this.panelResultado.TabIndex = 3;
             this.panelResultado.Visible = false;
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(64, 42);
+            this.lblResultado.Location = new System.Drawing.Point(61, 12);
+            this.lblResultado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(35, 13);
+            this.lblResultado.Size = new System.Drawing.Size(41, 13);
             this.lblResultado.TabIndex = 0;
             this.lblResultado.Text = "label1";
             // 
             // frmBeneficioFgts
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(377, 225);
             this.Controls.Add(this.panelResultado);
             this.Controls.Add(this.btnCalcularFtgs);
             this.Controls.Add(this.txtValorEmConta);
             this.Controls.Add(this.lblValorEmConta);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmBeneficioFgts";
-            this.Text = "frmBeneficioFgts";
+            this.Text = "MULTA FGTS";
             this.panelResultado.ResumeLayout(false);
             this.panelResultado.PerformLayout();
             this.ResumeLayout(false);

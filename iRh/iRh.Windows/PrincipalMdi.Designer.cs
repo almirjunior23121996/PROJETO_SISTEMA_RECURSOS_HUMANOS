@@ -54,7 +54,8 @@
             this.simuladoresToolStripMenuItem});
             this.menuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.menuPrincipal.Name = "menuPrincipal";
-            this.menuPrincipal.Size = new System.Drawing.Size(775, 24);
+            this.menuPrincipal.Padding = new System.Windows.Forms.Padding(9, 2, 0, 2);
+            this.menuPrincipal.Size = new System.Drawing.Size(911, 24);
             this.menuPrincipal.TabIndex = 1;
             this.menuPrincipal.Text = "menuStrip1";
             // 
@@ -62,10 +63,10 @@
             // 
             this.funcionáriosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuCadastroFuncionario});
+            this.funcionáriosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.funcionáriosToolStripMenuItem.Name = "funcionáriosToolStripMenuItem";
-            this.funcionáriosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.funcionáriosToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
             this.funcionáriosToolStripMenuItem.Text = "Cadastros";
-          
             // 
             // menuCadastroFuncionario
             // 
@@ -87,95 +88,97 @@
             this.menuBeneficioPis,
             this.menuBeneficioSeguroDesemprego,
             this.menuBeneficioValeTransporte});
+            this.simuladoresToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simuladoresToolStripMenuItem.Name = "simuladoresToolStripMenuItem";
-            this.simuladoresToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.simuladoresToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
             this.simuladoresToolStripMenuItem.Text = "Simuladores";
-         
             // 
             // menuDescontoInss
             // 
             this.menuDescontoInss.Name = "menuDescontoInss";
-            this.menuDescontoInss.Size = new System.Drawing.Size(250, 22);
+            this.menuDescontoInss.Size = new System.Drawing.Size(262, 22);
             this.menuDescontoInss.Text = "Desconto de INSS";
             this.menuDescontoInss.Click += new System.EventHandler(this.menuDescontoInss_Click);
             // 
             // menuDescontoIrrf
             // 
             this.menuDescontoIrrf.Name = "menuDescontoIrrf";
-            this.menuDescontoIrrf.Size = new System.Drawing.Size(250, 22);
+            this.menuDescontoIrrf.Size = new System.Drawing.Size(262, 22);
             this.menuDescontoIrrf.Text = "Desconto de IRPF";
             this.menuDescontoIrrf.Click += new System.EventHandler(this.menuDescontoIrrf_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(247, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(259, 6);
             // 
             // menuBeneficioAdicionalNoturno
             // 
             this.menuBeneficioAdicionalNoturno.Name = "menuBeneficioAdicionalNoturno";
-            this.menuBeneficioAdicionalNoturno.Size = new System.Drawing.Size(250, 22);
+            this.menuBeneficioAdicionalNoturno.Size = new System.Drawing.Size(262, 22);
             this.menuBeneficioAdicionalNoturno.Text = "Beneficio de Adicional Noturno";
             this.menuBeneficioAdicionalNoturno.Click += new System.EventHandler(this.menuBeneficioAdicionalNoturno_Click);
             // 
             // menuBeneficioFgts
             // 
             this.menuBeneficioFgts.Name = "menuBeneficioFgts";
-            this.menuBeneficioFgts.Size = new System.Drawing.Size(250, 22);
+            this.menuBeneficioFgts.Size = new System.Drawing.Size(262, 22);
             this.menuBeneficioFgts.Text = "Beneficio de Deposito FGTS";
             this.menuBeneficioFgts.Click += new System.EventHandler(this.menuBeneficioFgts_Click);
             // 
             // menuBeneficioFerias
             // 
             this.menuBeneficioFerias.Name = "menuBeneficioFerias";
-            this.menuBeneficioFerias.Size = new System.Drawing.Size(250, 22);
+            this.menuBeneficioFerias.Size = new System.Drawing.Size(262, 22);
             this.menuBeneficioFerias.Text = "Beneficio de Férias";
             this.menuBeneficioFerias.Click += new System.EventHandler(this.menuBeneficioFerias_Click);
             // 
             // menuBeneficioHoraExtra
             // 
             this.menuBeneficioHoraExtra.Name = "menuBeneficioHoraExtra";
-            this.menuBeneficioHoraExtra.Size = new System.Drawing.Size(250, 22);
+            this.menuBeneficioHoraExtra.Size = new System.Drawing.Size(262, 22);
             this.menuBeneficioHoraExtra.Text = "Beneficio de Hora Extra";
             this.menuBeneficioHoraExtra.Click += new System.EventHandler(this.menuBeneficioHoraExtra_Click);
             // 
             // menuBeneficioPericulosidade
             // 
             this.menuBeneficioPericulosidade.Name = "menuBeneficioPericulosidade";
-            this.menuBeneficioPericulosidade.Size = new System.Drawing.Size(250, 22);
+            this.menuBeneficioPericulosidade.Size = new System.Drawing.Size(262, 22);
             this.menuBeneficioPericulosidade.Text = "Beneficio de Periculosidade";
             this.menuBeneficioPericulosidade.Click += new System.EventHandler(this.menuBeneficioPericulosidade_Click);
             // 
             // menuBeneficioPis
             // 
             this.menuBeneficioPis.Name = "menuBeneficioPis";
-            this.menuBeneficioPis.Size = new System.Drawing.Size(250, 22);
+            this.menuBeneficioPis.Size = new System.Drawing.Size(262, 22);
             this.menuBeneficioPis.Text = "Beneficio de PIS";
             this.menuBeneficioPis.Click += new System.EventHandler(this.menuBeneficioPis_Click);
             // 
             // menuBeneficioSeguroDesemprego
             // 
             this.menuBeneficioSeguroDesemprego.Name = "menuBeneficioSeguroDesemprego";
-            this.menuBeneficioSeguroDesemprego.Size = new System.Drawing.Size(250, 22);
+            this.menuBeneficioSeguroDesemprego.Size = new System.Drawing.Size(262, 22);
             this.menuBeneficioSeguroDesemprego.Text = "Beneficio de Seguro Desemprogo";
             this.menuBeneficioSeguroDesemprego.Click += new System.EventHandler(this.menuBeneficioSeguroDesemprego_Click);
             // 
             // menuBeneficioValeTransporte
             // 
             this.menuBeneficioValeTransporte.Name = "menuBeneficioValeTransporte";
-            this.menuBeneficioValeTransporte.Size = new System.Drawing.Size(250, 22);
+            this.menuBeneficioValeTransporte.Size = new System.Drawing.Size(262, 22);
             this.menuBeneficioValeTransporte.Text = "Beneficio de Vale Transporte";
             this.menuBeneficioValeTransporte.Click += new System.EventHandler(this.menuBeneficioValeTransporte_Click);
             // 
             // PrincipalMdi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(775, 450);
+            this.ClientSize = new System.Drawing.Size(911, 554);
             this.Controls.Add(this.menuPrincipal);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuPrincipal;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "PrincipalMdi";
             this.Text = "PrincipalMdi";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBeneficioHoraExtra));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSalario = new System.Windows.Forms.TextBox();
@@ -41,75 +42,89 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(15, 13);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 13);
+            this.label1.Size = new System.Drawing.Size(162, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "INFORME O SEU SALÁRIO";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 63);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(19, 63);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(310, 13);
+            this.label2.Size = new System.Drawing.Size(356, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "INFORME QUANTAS HORAS EXTRAS VOCÊ FEZ ESSE MÊS";
             // 
             // txtSalario
             // 
-            this.txtSalario.Location = new System.Drawing.Point(16, 30);
+            this.txtSalario.Location = new System.Drawing.Point(19, 30);
+            this.txtSalario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtSalario.Name = "txtSalario";
-            this.txtSalario.Size = new System.Drawing.Size(100, 20);
+            this.txtSalario.Size = new System.Drawing.Size(116, 20);
             this.txtSalario.TabIndex = 2;
             // 
             // txtHorasFeitas
             // 
-            this.txtHorasFeitas.Location = new System.Drawing.Point(19, 79);
+            this.txtHorasFeitas.Location = new System.Drawing.Point(22, 79);
+            this.txtHorasFeitas.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtHorasFeitas.Name = "txtHorasFeitas";
-            this.txtHorasFeitas.Size = new System.Drawing.Size(100, 20);
+            this.txtHorasFeitas.Size = new System.Drawing.Size(116, 20);
             this.txtHorasFeitas.TabIndex = 3;
             // 
             // panel1Resultado
             // 
+            this.panel1Resultado.BackColor = System.Drawing.Color.Silver;
             this.panel1Resultado.Controls.Add(this.lblResultado);
-            this.panel1Resultado.Location = new System.Drawing.Point(19, 121);
+            this.panel1Resultado.Location = new System.Drawing.Point(22, 162);
+            this.panel1Resultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1Resultado.Name = "panel1Resultado";
-            this.panel1Resultado.Size = new System.Drawing.Size(200, 107);
+            this.panel1Resultado.Size = new System.Drawing.Size(358, 37);
             this.panel1Resultado.TabIndex = 4;
             this.panel1Resultado.Visible = false;
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(61, 43);
+            this.lblResultado.Location = new System.Drawing.Point(72, 15);
+            this.lblResultado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(35, 13);
+            this.lblResultado.Size = new System.Drawing.Size(41, 13);
             this.lblResultado.TabIndex = 0;
             this.lblResultado.Text = "label3";
             // 
             // button1Resultado
             // 
-            this.button1Resultado.Location = new System.Drawing.Point(251, 205);
+            this.button1Resultado.Location = new System.Drawing.Point(382, 205);
+            this.button1Resultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1Resultado.Name = "button1Resultado";
-            this.button1Resultado.Size = new System.Drawing.Size(75, 23);
+            this.button1Resultado.Size = new System.Drawing.Size(88, 23);
             this.button1Resultado.TabIndex = 5;
             this.button1Resultado.Text = "CALCULAR";
             this.button1Resultado.UseVisualStyleBackColor = true;
+            this.button1Resultado.Click += new System.EventHandler(this.button1Resultado_Click);
             // 
             // frmBeneficioHoraExtra
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(362, 245);
+            this.ClientSize = new System.Drawing.Size(472, 230);
             this.Controls.Add(this.button1Resultado);
             this.Controls.Add(this.panel1Resultado);
             this.Controls.Add(this.txtHorasFeitas);
             this.Controls.Add(this.txtSalario);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmBeneficioHoraExtra";
-            this.Text = "frmBeneficioHoraExtra";
+            this.Text = "ADICIONAL DE HORA EXTRA";
             this.panel1Resultado.ResumeLayout(false);
             this.panel1Resultado.PerformLayout();
             this.ResumeLayout(false);

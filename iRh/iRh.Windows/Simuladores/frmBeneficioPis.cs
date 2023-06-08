@@ -41,13 +41,13 @@ namespace iRh.Windows.Simuladores
                 double ValorReceber;
                 if (AnosDeCarteiraAssinada < 5)
                 {
-                    lbl4Resultado.Text = "INFELIZ MENTE NÃO TEM DIREITO A RECEBER O AUXILIO";
-                    lbl5Resultado.Text = "SOMENTE PESSOAS COM NO MINIMO 5 ANOS DE CARTEIRA ASSINADA";
+                    lbl4Resultado.Text = "INFELIZ MENTE NÃO TEM DIREITO A RECEBER O AUXILIO!";
+                    lbl5Resultado.Text = "SOMENTE PESSOAS COM NO MINIMO 5 ANOS DE CARTEIRA ASSINADA!";
                     panel1.Visible = true;
                 }
                 if (MediaSalario > SalarioMinimo) 
                 {
-                    lbl4Resultado.Text = "INFELIZ MENTE NÃO TEM DIREITO A RECEBER O AUXILIO";
+                    lbl4Resultado.Text = "INFELIZ MENTE NÃO TEM DIREITO A RECEBER O AUXILIO!";
                     lbl5Resultado.Text = "SUA FAIXA SALARIAL ULTRAPASSOU O LIMITE PERMITIDO!";
                     panel1.Visible = true;
                 }

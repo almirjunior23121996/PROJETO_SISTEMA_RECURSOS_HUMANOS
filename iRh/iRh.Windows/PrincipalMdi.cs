@@ -39,7 +39,7 @@ namespace iRh.Windows
 
         private void menuBeneficioAdicionalNoturno_Click(object sender, EventArgs e)
         {
-            var form = new frmBeneficioAdicionalNoturno();
+            var form = new BeneficioAdicionalNoturno();
             form.MdiParent = this;
             form.Show();
         }
