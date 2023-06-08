@@ -16,5 +16,7 @@ namespace iRh.Windows.Simuladores
         {
             InitializeComponent();
         }
+
+    
     }
 }
