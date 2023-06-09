@@ -23,7 +23,7 @@ namespace iRh.Windows.Simuladores
                 }
                 if (string.IsNullOrEmpty(txtHorasPericulo0sidade2.Text))
                 {
-                    MessageBox.Show("Informe um salario.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Informe a Quantidade de Horas Feitas.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtHorasPericulo0sidade2.Focus();
                     return;
                 }
@@ -35,10 +35,15 @@ namespace iRh.Windows.Simuladores
                 
 
             }
-            catch 
+            catch(Exception)
             {
                 MessageBox.Show("Preencha todos os campos necessarios", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

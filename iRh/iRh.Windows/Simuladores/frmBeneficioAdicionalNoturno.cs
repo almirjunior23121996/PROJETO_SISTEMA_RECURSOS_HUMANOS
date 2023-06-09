@@ -18,6 +18,12 @@ namespace iRh.Windows.Simuladores
                 txtSalarioTotal.Focus();
                 return;
             }
+            if (string.IsNullOrEmpty(txtHorasNoturnasFeitasNoMes.Text))
+            {
+                MessageBox.Show("Informe a quantidade de horas noturnas feitas.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtHorasNoturnasFeitasNoMes.Focus();
+                return;
+            }
             else
             {
                 try
@@ -32,14 +38,17 @@ namespace iRh.Windows.Simuladores
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Informe um salario válido.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Preechatodos Todos Campos necessarios.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
 
                 }
             }
-        } 
+        }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
        
 }

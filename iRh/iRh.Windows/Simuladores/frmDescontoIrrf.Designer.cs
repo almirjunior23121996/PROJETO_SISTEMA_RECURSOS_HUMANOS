@@ -34,6 +34,7 @@
             this.panelResultado = new System.Windows.Forms.Panel();
             this.lblResultado = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panelResultado.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,16 +45,16 @@
             this.label1.Location = new System.Drawing.Point(15, 13);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(170, 13);
+            this.label1.Size = new System.Drawing.Size(217, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "INFORME O SEU SALÁRIO: ";
+            this.label1.Text = "INFORME O SEU SALÁRIO BRUTO: ";
             // 
             // txtSalario
             // 
             this.txtSalario.Location = new System.Drawing.Point(19, 29);
             this.txtSalario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtSalario.Name = "txtSalario";
-            this.txtSalario.Size = new System.Drawing.Size(116, 20);
+            this.txtSalario.Size = new System.Drawing.Size(62, 20);
             this.txtSalario.TabIndex = 1;
             // 
             // panelResultado
@@ -89,11 +90,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(165, 195);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(85, 23);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "CANCELAR";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // frmDescontoIrrf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(358, 222);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panelResultado);
             this.Controls.Add(this.txtSalario);
@@ -118,5 +130,6 @@
         private System.Windows.Forms.Panel panelResultado;
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

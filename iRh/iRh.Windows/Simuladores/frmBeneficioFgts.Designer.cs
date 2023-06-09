@@ -34,6 +34,7 @@
             this.btnCalcularFtgs = new System.Windows.Forms.Button();
             this.panelResultado = new System.Windows.Forms.Panel();
             this.lblResultado = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.panelResultado.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,16 +45,16 @@
             this.lblValorEmConta.Location = new System.Drawing.Point(15, 13);
             this.lblValorEmConta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblValorEmConta.Name = "lblValorEmConta";
-            this.lblValorEmConta.Size = new System.Drawing.Size(291, 13);
+            this.lblValorEmConta.Size = new System.Drawing.Size(324, 13);
             this.lblValorEmConta.TabIndex = 0;
-            this.lblValorEmConta.Text = "INFORME O VALOR TOTAL EM CONTA DO FGTS";
+            this.lblValorEmConta.Text = "INFORME O VALOR TOTAL EM CONTA DO SEU FGTS:";
             // 
             // txtValorEmConta
             // 
             this.txtValorEmConta.Location = new System.Drawing.Point(19, 29);
             this.txtValorEmConta.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtValorEmConta.Name = "txtValorEmConta";
-            this.txtValorEmConta.Size = new System.Drawing.Size(116, 20);
+            this.txtValorEmConta.Size = new System.Drawing.Size(64, 20);
             this.txtValorEmConta.TabIndex = 1;
             // 
             // btnCalcularFtgs
@@ -72,28 +73,39 @@
             // 
             this.panelResultado.BackColor = System.Drawing.Color.Silver;
             this.panelResultado.Controls.Add(this.lblResultado);
-            this.panelResultado.Location = new System.Drawing.Point(19, 163);
+            this.panelResultado.Location = new System.Drawing.Point(5, 151);
             this.panelResultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panelResultado.Name = "panelResultado";
-            this.panelResultado.Size = new System.Drawing.Size(233, 36);
+            this.panelResultado.Size = new System.Drawing.Size(371, 48);
             this.panelResultado.TabIndex = 3;
             this.panelResultado.Visible = false;
             // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
-            this.lblResultado.Location = new System.Drawing.Point(61, 12);
+            this.lblResultado.Location = new System.Drawing.Point(4, 12);
             this.lblResultado.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblResultado.Name = "lblResultado";
             this.lblResultado.Size = new System.Drawing.Size(41, 13);
             this.lblResultado.TabIndex = 0;
             this.lblResultado.Text = "label1";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(179, 201);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(81, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "CANCELAR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmBeneficioFgts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(377, 225);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panelResultado);
             this.Controls.Add(this.btnCalcularFtgs);
             this.Controls.Add(this.txtValorEmConta);
@@ -117,5 +129,6 @@
         private System.Windows.Forms.Button btnCalcularFtgs;
         private System.Windows.Forms.Panel panelResultado;
         private System.Windows.Forms.Label lblResultado;
+        private System.Windows.Forms.Button button1;
     }
 }

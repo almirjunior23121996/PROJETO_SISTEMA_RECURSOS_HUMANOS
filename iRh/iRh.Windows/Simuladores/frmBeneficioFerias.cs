@@ -18,13 +18,13 @@ namespace iRh.Windows.Simuladores
 
                 if (string.IsNullOrEmpty(txtSalario.Text))
                 {
-                    MessageBox.Show("Informe vezes solicitadas", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Informe vezes solicitadas.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtSalario.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(txtVendaFerias.Text))
                 {
-                    MessageBox.Show("Informe vezes Trabalhados", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Informe quantos dias quer vender.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtVendaFerias.Focus();
                     return;
                 }
@@ -53,12 +53,15 @@ namespace iRh.Windows.Simuladores
 
 
             }
-            catch 
+            catch(Exception)
             {
-                MessageBox.Show("Informe um Valor Valido", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Preencha todos os campos necessarios.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-     
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -16,19 +16,19 @@ namespace iRh.Windows.Simuladores
             {
                 if (string.IsNullOrEmpty(txtSalario.Text))
                 {
-                    MessageBox.Show("Informe vezes solicitadas", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Informe Seu Salario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtSalario.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(txtAnosDeCarteiraAssinada.Text))
                 {
-                    MessageBox.Show("Informe vezes Trabalhados", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Informe Tempo De Carteira Assinada.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtAnosDeCarteiraAssinada.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(txtMesesTrabalhando.Text))
                 {
-                    MessageBox.Show("Informe vezes Trabalhados", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Informe meses trabalhados no emprego atual.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtMesesTrabalhando.Focus();
                     return;
                 }
@@ -36,7 +36,7 @@ namespace iRh.Windows.Simuladores
                 double MesesTrabalhando = double.Parse(txtMesesTrabalhando.Text);
                 double AnosDeCarteiraAssinada = double.Parse(txtAnosDeCarteiraAssinada.Text);
 
-                const double SalarioMinimo = 1230.00;
+                const double SalarioMinimo = 1320.00;
                 double MediaSalario = (Salario * MesesTrabalhando) / MesesTrabalhando;
                 double ValorReceber;
                 if (AnosDeCarteiraAssinada < 5)
@@ -59,10 +59,15 @@ namespace iRh.Windows.Simuladores
                     panel1.Visible = true;
                 }
             }
-            catch
+            catch(Exception)
             {
-                MessageBox.Show("Campo obrigatorio","Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Preencha todos os campos necessarios.","Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

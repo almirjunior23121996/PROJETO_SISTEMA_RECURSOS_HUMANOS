@@ -25,7 +25,7 @@ namespace iRh.Windows.Simuladores
                 }
                 if (string.IsNullOrEmpty(txtHorasFeitas.Text))
                 {
-                    MessageBox.Show("Informe um salario.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Informe a quantidade de horas feitas.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtHorasFeitas.Focus();
                     return;
                 }
@@ -37,10 +37,15 @@ namespace iRh.Windows.Simuladores
                 lblResultado.Text = "O VALOR DO ADICIONAL SERÁ DE:R$" + total.ToString("F2");
                 panel1Resultado.Visible = true;
             }
-            catch
+            catch(Exception)
             {
-
+                MessageBox.Show("Preecha Todos os Campos necessarios.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

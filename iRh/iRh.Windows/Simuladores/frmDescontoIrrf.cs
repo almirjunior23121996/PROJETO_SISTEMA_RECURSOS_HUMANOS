@@ -14,7 +14,7 @@ namespace iRh.Windows.Simuladores
         {
             if (string.IsNullOrEmpty(txtSalario.Text))
             {
-                MessageBox.Show("Informe um salario.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Informe um salario.", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
                 txtSalario.Focus();
                 return;
             }
@@ -36,6 +36,9 @@ namespace iRh.Windows.Simuladores
             }
         }
 
-    
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

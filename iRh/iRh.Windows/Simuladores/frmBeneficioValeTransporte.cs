@@ -16,19 +16,19 @@ namespace iRh.Windows.Simuladores
             {
                 if (string.IsNullOrEmpty(txtSalario.Text))
                 {
-                    MessageBox.Show("Informe vezes solicitadas", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Informe seu salario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtSalario.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(txtValorPassagem.Text))
                 {
-                    MessageBox.Show("Informe vezes Trabalhados", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Informe o valor da Passagem.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtValorPassagem.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(txtPassagens.Text))
                 {
-                    MessageBox.Show("Informe vezes Trabalhados", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Informe a quantidade necessaria de passagens. ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtPassagens.Focus();
                     return;
                 }
@@ -53,12 +53,15 @@ namespace iRh.Windows.Simuladores
 
 
             }
-            catch 
+            catch(Exception)
             {
-                MessageBox.Show("Campo Obrigatorio", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Preencha todos os campos necessarios.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-      
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

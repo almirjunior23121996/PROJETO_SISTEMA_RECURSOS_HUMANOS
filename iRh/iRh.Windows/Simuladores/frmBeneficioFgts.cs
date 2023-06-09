@@ -16,7 +16,7 @@ namespace iRh.Windows.Simuladores
         {
             if(string.IsNullOrEmpty(txtValorEmConta.Text))
             {
-                MessageBox.Show("Informe um salario.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Informe um valor.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtValorEmConta.Focus();
                 return;
             }else
@@ -25,16 +25,21 @@ namespace iRh.Windows.Simuladores
                 {
                     var salarioValorEmConta = double.Parse(txtValorEmConta.Text);
                     var contribuicaoFgts = Fgts.Calcula(salarioValorEmConta);
-                    lblResultado.Text = "O VALOR DA MULTA É DE: R$" + contribuicaoFgts.ToString("F2");
+                    lblResultado.Text = "O VALOR TOTAL DE MULTA QUE VOÊ IRA RECEBER DO \n SEU EMPREGO ATUAL SERÁ DE: R$" + contribuicaoFgts.ToString("F2");
                     panelResultado.Show();
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Informe um salario válido.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Informe um valor válido.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     
                     
                 }
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

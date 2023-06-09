@@ -15,7 +15,7 @@ namespace iRh.Windows.Simuladores
         {
             if (string.IsNullOrEmpty(txtSalarioBase.Text))
             {
-                MessageBox.Show("Informe seu salário base", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Informe seu salário base.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                 txtSalarioBase.Focus();
                 return;
@@ -29,12 +29,15 @@ namespace iRh.Windows.Simuladores
             }
             catch (Exception)
             {
-                MessageBox.Show("Informe um valor de salário válido, ex.3500", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Preencha todos os campos necessarios;", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             
             }
         
         }
 
-    
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

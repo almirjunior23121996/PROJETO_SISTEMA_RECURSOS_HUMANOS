@@ -1,65 +1,51 @@
-﻿namespace iRh.Windows.Core
+﻿using System.Runtime.InteropServices;
+
+namespace iRh.Windows.Core
 {
     
-    class Inss
+    public static  class Inss
     {
-        const double Faixa01 = 1302.0;
-        const double Faixa02 = 2571.29;
-        const double Faixa03 = 3856.94;
-        const double Faixa04 = 7507.49;
-        //funcao retorno nome()
+        
         public static double Calcula(double salario)
         {
+            double valorDoDesconto = 0.0;
+            double calculoDoInposto;
+            if (salario <= 1302.0) 
+            {
+                calculoDoInposto = (salario / 100) * 7.5;
+                valorDoDesconto = calculoDoInposto + valorDoDesconto;
+                return valorDoDesconto;
+                
+            }
+            if(salario < 2571.29) 
+            {
+                valorDoDesconto = 97.65;
+                calculoDoInposto = ((salario - 1302.01) / 100) * 9;
+                valorDoDesconto = calculoDoInposto + valorDoDesconto;
+                return valorDoDesconto;
+            }
+            if(salario < 3856.94 || salario < 5507.49) 
+            {
+                valorDoDesconto = 97.65 + 114.23;
+                calculoDoInposto = ((salario - 2571.30) / 100) * 12;
+                valorDoDesconto = calculoDoInposto + valorDoDesconto;
+                return valorDoDesconto;
+            }
+            if (salario > 7507.49)
+            {
+                valorDoDesconto = 97.65 + 114.24 + 154.28;
+                calculoDoInposto = ((7507.49 - 3856.95) / 100) * 14;
+                valorDoDesconto = calculoDoInposto + valorDoDesconto;
+                return valorDoDesconto;
+            }
+            return valorDoDesconto;
+            
+
+        }
           
 
-            double valorInss = 0;
+           
 
-            if(salario <= Faixa01)
-            {
-                valorInss = Core.Inss.CalculaFaixa1(salario);
-            }
-            else if(salario <= Faixa02)
-            {
-                var descontoFaixa1 = Core.Inss.CalculaFaixa1(salario);
-                valorInss = (salario - Faixa01) + descontoFaixa1;
-            }
-            else if (salario <= Faixa03)
-            {
-                var descontoFaixa1 = CalculaFaixa1(salario);
-                var descontoFaixa2 = CalculaFaixa2(salario);
-                valorInss = 12 / 100 * (salario - Faixa02) + descontoFaixa1 + descontoFaixa2;
-            }
-            else if (salario <= Faixa04)
-            {
-                var descontoFaixa1 = CalculaFaixa1(salario);
-                var descontoFaixa2 = CalculaFaixa2(salario);
-                var descontoFaixa3 = 0.12 * (Faixa03 - Faixa02);
-                valorInss = 0.14 * (salario - Faixa03)
-                    + descontoFaixa1 + descontoFaixa2 + descontoFaixa3;
-
-            }
-            else
-            {
-                var descontoFaixa1 = CalculaFaixa1(salario);
-                var descontoFaixa2 = CalculaFaixa2(salario);
-                var descontoFaixa3 = CalculaFaixa3(salario);
-                valorInss = 0.14 * (Faixa04 - Faixa03)
-                   + descontoFaixa1 + descontoFaixa2 + descontoFaixa3;
-            }
-            return valorInss;
-        }
-
-        private static double CalculaFaixa1(double salario)
-        {
-            return (0.075 * Faixa01);
-        }
-        private static double CalculaFaixa2(double salario)
-        {
-            return 0.09 *( Faixa02 - Faixa01);
-        }
-        private static double CalculaFaixa3(double salario)
-        {
-            return 0.012 * (Faixa03 - Faixa02);
-        }
+     
     }
 }

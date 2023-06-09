@@ -18,13 +18,13 @@ namespace iRh.Windows.Simuladores
                 
                 if (string.IsNullOrEmpty(txtVezesSolicitados.Text))
                 {
-                    MessageBox.Show("Informe vezes solicitadas", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Informe vezes solicitadas.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtVezesSolicitados.Focus();
                     return;
                 }
                 if (string.IsNullOrEmpty(txtMesesTrabalhados.Text))
                 {
-                    MessageBox.Show("Informe vezes Trabalhados", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Informe Meses Trabalhados.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtMesesTrabalhados.Focus();
                     return;
                 }
@@ -97,12 +97,15 @@ namespace iRh.Windows.Simuladores
 
 
             }
-            catch
+            catch(Exception)
             {
-                MessageBox.Show("Informe um Valor Valido, Ex:1,2,3,4", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Preencha todos os camposnecessarios.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-      
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
