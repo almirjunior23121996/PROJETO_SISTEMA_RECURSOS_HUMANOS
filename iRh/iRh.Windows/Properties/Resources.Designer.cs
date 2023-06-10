@@ -83,6 +83,16 @@ namespace iRh.Windows.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_08_17571510 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-08 17571510", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_tela_2023_06_08_1757152 {
             get {
                 object obj = ResourceManager.GetObject("Captura de tela 2023-06-08 1757152", resourceCulture);
@@ -166,6 +176,16 @@ namespace iRh.Windows.Properties {
         internal static System.Drawing.Bitmap Captura_de_tela_2023_06_09_222752 {
             get {
                 object obj = ResourceManager.GetObject("Captura de tela 2023-06-09 222752", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_09_2227521 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-09 2227521", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -104,10 +104,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_08_1757152;
-            this.pictureBox1.Location = new System.Drawing.Point(-3, 0);
+            this.pictureBox1.Image = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_08_17571510;
+            this.pictureBox1.Location = new System.Drawing.Point(-3, 1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(379, 224);
+            this.pictureBox1.Size = new System.Drawing.Size(379, 223);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 

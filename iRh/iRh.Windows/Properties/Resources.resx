@@ -118,37 +118,46 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Captura de tela 2023-06-09 222752" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Captura de tela 2023-06-09 222752.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Captura de tela 2023-06-08 1757156" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Captura de tela 2023-06-08 1757156.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Captura de tela 2023-06-08 175715" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Captura de tela 2023-06-08 175715.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Captura de tela 2023-06-08 1757154" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Captura de tela 2023-06-08 1757154.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Captura de tela 2023-06-08 1757151" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de tela 2023-06-08 1757151.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Captura de tela 2023-06-08 1757152" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de tela 2023-06-08 1757152.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Captura de tela 2023-06-08 1757155" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Captura de tela 2023-06-08 1757155.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Captura de tela 2023-06-08 1757153" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Captura de tela 2023-06-08 1757153.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Captura de tela 2023-06-08 17571510" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de tela 2023-06-08 17571510.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Captura de tela 2023-06-08 1757157" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de tela 2023-06-08 1757157.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Captura de tela 2023-06-08 1757151" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Captura de tela 2023-06-08 1757151.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Captura de tela 2023-06-09 222752" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de tela 2023-06-09 222752.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Captura de tela 2023-06-08 1757153" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de tela 2023-06-08 1757153.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Captura de tela 2023-06-08 175715" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de tela 2023-06-08 175715.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Captura de tela 2023-06-08 1757156" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de tela 2023-06-08 1757156.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Captura de tela 2023-06-09 2227521" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de tela 2023-06-09 2227521.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Captura de tela 2023-06-08 1757154" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de tela 2023-06-08 1757154.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Captura de tela 2023-06-08 1757155" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de tela 2023-06-08 1757155.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Captura de tela 2023-06-08 1757158" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de tela 2023-06-08 1757158.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Captura de tela 2023-06-08 1757159" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Captura de tela 2023-06-08 1757159.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Captura de tela 2023-06-08 17571510" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Captura de tela 2023-06-08 17571511.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
