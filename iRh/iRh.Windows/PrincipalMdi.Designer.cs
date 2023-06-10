@@ -55,7 +55,7 @@
             this.menuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.menuPrincipal.Name = "menuPrincipal";
             this.menuPrincipal.Padding = new System.Windows.Forms.Padding(9, 2, 0, 2);
-            this.menuPrincipal.Size = new System.Drawing.Size(911, 24);
+            this.menuPrincipal.Size = new System.Drawing.Size(1801, 24);
             this.menuPrincipal.TabIndex = 1;
             this.menuPrincipal.Text = "menuStrip1";
             // 
@@ -71,7 +71,7 @@
             // menuCadastroFuncionario
             // 
             this.menuCadastroFuncionario.Name = "menuCadastroFuncionario";
-            this.menuCadastroFuncionario.Size = new System.Drawing.Size(180, 22);
+            this.menuCadastroFuncionario.Size = new System.Drawing.Size(141, 22);
             this.menuCadastroFuncionario.Text = "Funcionarios";
             // 
             // simuladoresToolStripMenuItem
@@ -172,13 +172,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(911, 554);
+            this.ClientSize = new System.Drawing.Size(1801, 806);
             this.Controls.Add(this.menuPrincipal);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuPrincipal;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PrincipalMdi";
             this.Text = "PrincipalMdi";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
