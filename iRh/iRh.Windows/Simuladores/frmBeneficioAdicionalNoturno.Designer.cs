@@ -33,10 +33,10 @@
             this.lblHorasNoturnas = new System.Windows.Forms.Label();
             this.txtSalarioTotal = new System.Windows.Forms.TextBox();
             this.txtHorasNoturnasFeitasNoMes = new System.Windows.Forms.TextBox();
-            this.btnCalcular = new System.Windows.Forms.Button();
             this.panelResultado = new System.Windows.Forms.Panel();
             this.lblResultado = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnCalcular = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelResultado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -45,6 +45,7 @@
             // lblSalario
             // 
             this.lblSalario.AutoSize = true;
+            this.lblSalario.BackColor = System.Drawing.Color.Transparent;
             this.lblSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSalario.Location = new System.Drawing.Point(15, 13);
             this.lblSalario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -56,6 +57,7 @@
             // lblHorasNoturnas
             // 
             this.lblHorasNoturnas.AutoSize = true;
+            this.lblHorasNoturnas.BackColor = System.Drawing.Color.Transparent;
             this.lblHorasNoturnas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHorasNoturnas.Location = new System.Drawing.Point(15, 82);
             this.lblHorasNoturnas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -80,23 +82,11 @@
             this.txtHorasNoturnasFeitasNoMes.Size = new System.Drawing.Size(69, 20);
             this.txtHorasNoturnasFeitasNoMes.TabIndex = 3;
             // 
-            // btnCalcular
-            // 
-            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(288, 233);
-            this.btnCalcular.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(88, 23);
-            this.btnCalcular.TabIndex = 4;
-            this.btnCalcular.Text = "CALCULAR";
-            this.btnCalcular.UseVisualStyleBackColor = true;
-            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
-            // 
             // panelResultado
             // 
             this.panelResultado.BackColor = System.Drawing.Color.Silver;
             this.panelResultado.Controls.Add(this.lblResultado);
-            this.panelResultado.Location = new System.Drawing.Point(19, 175);
+            this.panelResultado.Location = new System.Drawing.Point(19, 150);
             this.panelResultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panelResultado.Name = "panelResultado";
             this.panelResultado.Size = new System.Drawing.Size(357, 52);
@@ -115,7 +105,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(192, 233);
+            this.button1.Location = new System.Drawing.Point(306, 284);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 23);
             this.button1.TabIndex = 6;
@@ -123,12 +113,30 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnCalcular
+            // 
+            this.btnCalcular.BackColor = System.Drawing.Color.Transparent;
+            this.btnCalcular.BackgroundImage = global::iRh.Windows.Properties.Resources.icons8_calculadora_100;
+            this.btnCalcular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCalcular.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.Location = new System.Drawing.Point(131, 217);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(80, 72);
+            this.btnCalcular.TabIndex = 4;
+            this.btnCalcular.Text = "CALCULAR";
+            this.btnCalcular.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCalcular.UseVisualStyleBackColor = false;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_08_175715;
             this.pictureBox1.Location = new System.Drawing.Point(2, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(393, 256);
+            this.pictureBox1.Size = new System.Drawing.Size(393, 307);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -136,7 +144,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(393, 256);
+            this.ClientSize = new System.Drawing.Size(393, 311);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panelResultado);
             this.Controls.Add(this.btnCalcular);

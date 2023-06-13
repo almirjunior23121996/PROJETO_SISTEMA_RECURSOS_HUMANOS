@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBeneficioPericulosidade));
             this.label1 = new System.Windows.Forms.Label();
             this.txtSalario = new System.Windows.Forms.TextBox();
-            this.buttonCalcular = new System.Windows.Forms.Button();
             this.txtHorasPericulo0sidade2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panelResultado = new System.Windows.Forms.Panel();
             this.labelResultado = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.buttonCalcular = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelResultado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,17 +60,6 @@
             this.txtSalario.Size = new System.Drawing.Size(69, 20);
             this.txtSalario.TabIndex = 1;
             // 
-            // buttonCalcular
-            // 
-            this.buttonCalcular.Location = new System.Drawing.Point(319, 270);
-            this.buttonCalcular.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.buttonCalcular.Name = "buttonCalcular";
-            this.buttonCalcular.Size = new System.Drawing.Size(88, 23);
-            this.buttonCalcular.TabIndex = 5;
-            this.buttonCalcular.Text = "CALCULAR";
-            this.buttonCalcular.UseVisualStyleBackColor = true;
-            this.buttonCalcular.Click += new System.EventHandler(this.buttonCalcular_Click);
-            // 
             // txtHorasPericulo0sidade2
             // 
             this.txtHorasPericulo0sidade2.Location = new System.Drawing.Point(19, 99);
@@ -93,7 +82,7 @@
             // 
             this.panelResultado.BackColor = System.Drawing.Color.Silver;
             this.panelResultado.Controls.Add(this.labelResultado);
-            this.panelResultado.Location = new System.Drawing.Point(13, 208);
+            this.panelResultado.Location = new System.Drawing.Point(19, 157);
             this.panelResultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panelResultado.Name = "panelResultado";
             this.panelResultado.Size = new System.Drawing.Size(363, 56);
@@ -112,7 +101,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(225, 270);
+            this.button1.Location = new System.Drawing.Point(320, 280);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 23);
             this.button1.TabIndex = 9;
@@ -120,12 +109,27 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // buttonCalcular
+            // 
+            this.buttonCalcular.BackgroundImage = global::iRh.Windows.Properties.Resources.icons8_calculadora_1004;
+            this.buttonCalcular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonCalcular.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonCalcular.Location = new System.Drawing.Point(154, 219);
+            this.buttonCalcular.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.buttonCalcular.Name = "buttonCalcular";
+            this.buttonCalcular.Size = new System.Drawing.Size(88, 74);
+            this.buttonCalcular.TabIndex = 5;
+            this.buttonCalcular.Text = "CALCULAR";
+            this.buttonCalcular.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonCalcular.UseVisualStyleBackColor = true;
+            this.buttonCalcular.Click += new System.EventHandler(this.buttonCalcular_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_08_1757154;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(407, 293);
+            this.pictureBox1.Size = new System.Drawing.Size(407, 303);
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
@@ -133,7 +137,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(407, 293);
+            this.ClientSize = new System.Drawing.Size(407, 301);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtHorasPericulo0sidade2);
             this.Controls.Add(this.panelResultado);

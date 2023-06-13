@@ -35,8 +35,8 @@
             this.txtHorasFeitas = new System.Windows.Forms.TextBox();
             this.panel1Resultado = new System.Windows.Forms.Panel();
             this.lblResultado = new System.Windows.Forms.Label();
-            this.button1Resultado = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button1Resultado = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1Resultado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -84,7 +84,7 @@
             // 
             this.panel1Resultado.BackColor = System.Drawing.Color.Silver;
             this.panel1Resultado.Controls.Add(this.lblResultado);
-            this.panel1Resultado.Location = new System.Drawing.Point(13, 162);
+            this.panel1Resultado.Location = new System.Drawing.Point(19, 119);
             this.panel1Resultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1Resultado.Name = "panel1Resultado";
             this.panel1Resultado.Size = new System.Drawing.Size(398, 37);
@@ -101,20 +101,9 @@
             this.lblResultado.TabIndex = 0;
             this.lblResultado.Text = "label3";
             // 
-            // button1Resultado
-            // 
-            this.button1Resultado.Location = new System.Drawing.Point(323, 205);
-            this.button1Resultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button1Resultado.Name = "button1Resultado";
-            this.button1Resultado.Size = new System.Drawing.Size(88, 23);
-            this.button1Resultado.TabIndex = 5;
-            this.button1Resultado.Text = "CALCULAR";
-            this.button1Resultado.UseVisualStyleBackColor = true;
-            this.button1Resultado.Click += new System.EventHandler(this.button1Resultado_Click);
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(231, 205);
+            this.button1.Location = new System.Drawing.Point(326, 251);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 23);
             this.button1.TabIndex = 6;
@@ -122,12 +111,27 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button1Resultado
+            // 
+            this.button1Resultado.BackgroundImage = global::iRh.Windows.Properties.Resources.icons8_calculadora_1003;
+            this.button1Resultado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1Resultado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1Resultado.Location = new System.Drawing.Point(161, 173);
+            this.button1Resultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button1Resultado.Name = "button1Resultado";
+            this.button1Resultado.Size = new System.Drawing.Size(88, 71);
+            this.button1Resultado.TabIndex = 5;
+            this.button1Resultado.Text = "CALCULAR";
+            this.button1Resultado.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1Resultado.UseVisualStyleBackColor = true;
+            this.button1Resultado.Click += new System.EventHandler(this.button1Resultado_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_08_1757153;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(411, 228);
+            this.pictureBox1.Size = new System.Drawing.Size(411, 274);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -135,7 +139,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(413, 230);
+            this.ClientSize = new System.Drawing.Size(413, 273);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button1Resultado);
             this.Controls.Add(this.panel1Resultado);

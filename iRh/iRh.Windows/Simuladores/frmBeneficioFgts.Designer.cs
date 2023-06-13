@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBeneficioFgts));
             this.lblValorEmConta = new System.Windows.Forms.Label();
             this.txtValorEmConta = new System.Windows.Forms.TextBox();
-            this.btnCalcularFtgs = new System.Windows.Forms.Button();
             this.panelResultado = new System.Windows.Forms.Panel();
             this.lblResultado = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnCalcularFtgs = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelResultado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,23 +59,11 @@
             this.txtValorEmConta.Size = new System.Drawing.Size(64, 20);
             this.txtValorEmConta.TabIndex = 1;
             // 
-            // btnCalcularFtgs
-            // 
-            this.btnCalcularFtgs.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcularFtgs.Location = new System.Drawing.Point(261, 201);
-            this.btnCalcularFtgs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnCalcularFtgs.Name = "btnCalcularFtgs";
-            this.btnCalcularFtgs.Size = new System.Drawing.Size(115, 23);
-            this.btnCalcularFtgs.TabIndex = 2;
-            this.btnCalcularFtgs.Text = "CALCULAR FGTS";
-            this.btnCalcularFtgs.UseVisualStyleBackColor = true;
-            this.btnCalcularFtgs.Click += new System.EventHandler(this.btnCalcularFtgs_Click);
-            // 
             // panelResultado
             // 
             this.panelResultado.BackColor = System.Drawing.Color.Silver;
             this.panelResultado.Controls.Add(this.lblResultado);
-            this.panelResultado.Location = new System.Drawing.Point(5, 151);
+            this.panelResultado.Location = new System.Drawing.Point(13, 110);
             this.panelResultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panelResultado.Name = "panelResultado";
             this.panelResultado.Size = new System.Drawing.Size(371, 48);
@@ -94,7 +82,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(179, 201);
+            this.button1.Location = new System.Drawing.Point(295, 214);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(81, 23);
             this.button1.TabIndex = 4;
@@ -102,12 +90,28 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnCalcularFtgs
+            // 
+            this.btnCalcularFtgs.BackgroundImage = global::iRh.Windows.Properties.Resources.icons8_calculadora_1002;
+            this.btnCalcularFtgs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCalcularFtgs.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCalcularFtgs.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcularFtgs.Location = new System.Drawing.Point(170, 161);
+            this.btnCalcularFtgs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnCalcularFtgs.Name = "btnCalcularFtgs";
+            this.btnCalcularFtgs.Size = new System.Drawing.Size(82, 76);
+            this.btnCalcularFtgs.TabIndex = 2;
+            this.btnCalcularFtgs.Text = "CALCULAR";
+            this.btnCalcularFtgs.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCalcularFtgs.UseVisualStyleBackColor = true;
+            this.btnCalcularFtgs.Click += new System.EventHandler(this.btnCalcularFtgs_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_08_17571510;
             this.pictureBox1.Location = new System.Drawing.Point(-3, 1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(379, 223);
+            this.pictureBox1.Size = new System.Drawing.Size(379, 266);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
@@ -115,7 +119,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(377, 225);
+            this.ClientSize = new System.Drawing.Size(377, 238);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panelResultado);
             this.Controls.Add(this.btnCalcularFtgs);

@@ -53,6 +53,8 @@
       <DependentUpon>frmFuncionario.cs</DependentUpon>
     </Compile>
     <Compile Include="Core\AdicionalNoturno.cs" />
+    <Compile Include="Core\Colaborador.cs" />
+    <Compile Include="Core\Estados.cs" />
     <Compile Include="Core\Fgts.cs" />
     <Compile Include="Core\HoraExtra.cs" />
     <Compile Include="Core\Inss.cs" />
@@ -127,6 +129,9 @@
     <Compile Include="Simuladores\frmDescontoIrrf.Designer.cs">
       <DependentUpon>frmDescontoIrrf.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Cadastros\frmFuncionario.resx">
+      <DependentUpon>frmFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PrincipalMdi.resx">
       <DependentUpon>PrincipalMdi.cs</DependentUpon>
     </EmbeddedResource>
@@ -224,6 +229,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Captura de tela 2023-06-08 17571511.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calculadora-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calculadora-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calculadora-1002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calculadora-1003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calculadora-1004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calculadora-1005.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calculadora-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calculadora-1006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calculadora-1007.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calculadora-1008.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calculadora-1009.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

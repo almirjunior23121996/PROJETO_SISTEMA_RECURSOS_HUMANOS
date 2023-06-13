@@ -35,8 +35,8 @@
             this.txtMesesTrabalhados = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblResultado = new System.Windows.Forms.Label();
-            this.buttonResultado = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.buttonResultado = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -80,7 +80,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.Controls.Add(this.lblResultado);
-            this.panel1.Location = new System.Drawing.Point(12, 161);
+            this.panel1.Location = new System.Drawing.Point(16, 123);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(345, 36);
             this.panel1.TabIndex = 4;
@@ -96,21 +96,10 @@
             this.lblResultado.TabIndex = 0;
             this.lblResultado.Text = "label3";
             // 
-            // buttonResultado
-            // 
-            this.buttonResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonResultado.Location = new System.Drawing.Point(339, 203);
-            this.buttonResultado.Name = "buttonResultado";
-            this.buttonResultado.Size = new System.Drawing.Size(75, 23);
-            this.buttonResultado.TabIndex = 5;
-            this.buttonResultado.Text = "Simular";
-            this.buttonResultado.UseVisualStyleBackColor = true;
-            this.buttonResultado.Click += new System.EventHandler(this.buttonResultado_Click);
-            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(247, 203);
+            this.button1.Location = new System.Drawing.Point(328, 229);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(86, 23);
             this.button1.TabIndex = 6;
@@ -118,12 +107,27 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // buttonResultado
+            // 
+            this.buttonResultado.BackgroundImage = global::iRh.Windows.Properties.Resources.icons8_calculadora_1006;
+            this.buttonResultado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonResultado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonResultado.Location = new System.Drawing.Point(150, 167);
+            this.buttonResultado.Name = "buttonResultado";
+            this.buttonResultado.Size = new System.Drawing.Size(79, 73);
+            this.buttonResultado.TabIndex = 5;
+            this.buttonResultado.Text = "CALCULAR";
+            this.buttonResultado.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonResultado.UseVisualStyleBackColor = true;
+            this.buttonResultado.Click += new System.EventHandler(this.buttonResultado_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_08_1757156;
             this.pictureBox1.Location = new System.Drawing.Point(0, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(414, 227);
+            this.pictureBox1.Size = new System.Drawing.Size(414, 253);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -131,7 +135,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(417, 230);
+            this.ClientSize = new System.Drawing.Size(417, 252);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonResultado);
             this.Controls.Add(this.panel1);

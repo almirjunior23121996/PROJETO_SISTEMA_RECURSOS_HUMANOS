@@ -35,11 +35,11 @@
             this.txtSalario = new System.Windows.Forms.TextBox();
             this.txtValorPassagem = new System.Windows.Forms.TextBox();
             this.txtPassagens = new System.Windows.Forms.TextBox();
-            this.btnCalcular = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblResultado2 = new System.Windows.Forms.Label();
             this.lblResultado = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnCalcular = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -103,17 +103,6 @@
             this.txtPassagens.Size = new System.Drawing.Size(76, 20);
             this.txtPassagens.TabIndex = 5;
             // 
-            // btnCalcular
-            // 
-            this.btnCalcular.Location = new System.Drawing.Point(329, 234);
-            this.btnCalcular.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(88, 23);
-            this.btnCalcular.TabIndex = 6;
-            this.btnCalcular.Text = "CALCULAR";
-            this.btnCalcular.UseVisualStyleBackColor = true;
-            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
@@ -148,7 +137,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(238, 234);
+            this.button1.Location = new System.Drawing.Point(333, 285);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 23);
             this.button1.TabIndex = 8;
@@ -156,12 +145,27 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnCalcular
+            // 
+            this.btnCalcular.BackgroundImage = global::iRh.Windows.Properties.Resources.icons8_calculadora_1007;
+            this.btnCalcular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnCalcular.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCalcular.Location = new System.Drawing.Point(147, 231);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(88, 64);
+            this.btnCalcular.TabIndex = 6;
+            this.btnCalcular.Text = "CALCULAR";
+            this.btnCalcular.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_08_1757157;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(417, 257);
+            this.pictureBox1.Size = new System.Drawing.Size(417, 308);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
@@ -170,7 +174,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(418, 259);
+            this.ClientSize = new System.Drawing.Size(418, 307);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCalcular);

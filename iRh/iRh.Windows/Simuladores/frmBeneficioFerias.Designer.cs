@@ -35,8 +35,8 @@
             this.txtVendaFerias = new System.Windows.Forms.TextBox();
             this.panel1Resultado = new System.Windows.Forms.Panel();
             this.lblResultado = new System.Windows.Forms.Label();
-            this.button1Resultado = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button1Resultado = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1Resultado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -84,7 +84,7 @@
             // 
             this.panel1Resultado.BackColor = System.Drawing.Color.Silver;
             this.panel1Resultado.Controls.Add(this.lblResultado);
-            this.panel1Resultado.Location = new System.Drawing.Point(18, 174);
+            this.panel1Resultado.Location = new System.Drawing.Point(19, 131);
             this.panel1Resultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1Resultado.Name = "panel1Resultado";
             this.panel1Resultado.Size = new System.Drawing.Size(346, 41);
@@ -101,27 +101,30 @@
             this.lblResultado.TabIndex = 0;
             this.lblResultado.Text = "label3";
             // 
-            // button1Resultado
-            // 
-            this.button1Resultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1Resultado.Location = new System.Drawing.Point(390, 222);
-            this.button1Resultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.button1Resultado.Name = "button1Resultado";
-            this.button1Resultado.Size = new System.Drawing.Size(88, 23);
-            this.button1Resultado.TabIndex = 5;
-            this.button1Resultado.Text = "CALCULAR";
-            this.button1Resultado.UseVisualStyleBackColor = true;
-            this.button1Resultado.Click += new System.EventHandler(this.button1Resultado_Click);
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(299, 222);
+            this.button1.Location = new System.Drawing.Point(409, 222);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 23);
             this.button1.TabIndex = 6;
             this.button1.Text = "CANCELAR";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button1Resultado
+            // 
+            this.button1Resultado.BackgroundImage = global::iRh.Windows.Properties.Resources.icons8_calculadora_1001;
+            this.button1Resultado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1Resultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1Resultado.Location = new System.Drawing.Point(176, 177);
+            this.button1Resultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button1Resultado.Name = "button1Resultado";
+            this.button1Resultado.Size = new System.Drawing.Size(96, 67);
+            this.button1Resultado.TabIndex = 5;
+            this.button1Resultado.Text = "CALCULAR";
+            this.button1Resultado.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button1Resultado.UseVisualStyleBackColor = true;
+            this.button1Resultado.Click += new System.EventHandler(this.button1Resultado_Click);
             // 
             // pictureBox1
             // 
