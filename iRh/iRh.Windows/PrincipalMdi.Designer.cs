@@ -55,7 +55,7 @@
             this.menuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.menuPrincipal.Name = "menuPrincipal";
             this.menuPrincipal.Padding = new System.Windows.Forms.Padding(9, 2, 0, 2);
-            this.menuPrincipal.Size = new System.Drawing.Size(1801, 24);
+            this.menuPrincipal.Size = new System.Drawing.Size(1370, 24);
             this.menuPrincipal.TabIndex = 1;
             this.menuPrincipal.Text = "menuStrip1";
             // 
@@ -67,11 +67,12 @@
             this.funcionáriosToolStripMenuItem.Name = "funcionáriosToolStripMenuItem";
             this.funcionáriosToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
             this.funcionáriosToolStripMenuItem.Text = "Cadastros";
+            this.funcionáriosToolStripMenuItem.Click += new System.EventHandler(this.funcionáriosToolStripMenuItem_Click);
             // 
             // menuCadastroFuncionario
             // 
             this.menuCadastroFuncionario.Name = "menuCadastroFuncionario";
-            this.menuCadastroFuncionario.Size = new System.Drawing.Size(141, 22);
+            this.menuCadastroFuncionario.Size = new System.Drawing.Size(180, 22);
             this.menuCadastroFuncionario.Text = "Funcionarios";
             // 
             // simuladoresToolStripMenuItem
@@ -173,7 +174,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_09_2227521;
-            this.ClientSize = new System.Drawing.Size(1801, 806);
+            this.ClientSize = new System.Drawing.Size(1370, 749);
             this.Controls.Add(this.menuPrincipal);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

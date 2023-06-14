@@ -1,13 +1,7 @@
-﻿using System;
-using iRh.Windows.Simuladores;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using iRh.Windows.Simuladores;
+using System;
 using System.Windows.Forms;
+using iRh.Windows.Cadastros;
 
 namespace iRh.Windows
 {
@@ -93,6 +87,11 @@ namespace iRh.Windows
             form.Show();
         }
 
-   
+        private void funcionáriosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new frmFuncionario();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
