@@ -288,5 +288,119 @@
   <ItemGroup>
     <None Include="Resources\rh.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator_icon-icons.com_72046.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 141110.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rh21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rh3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 141944.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 141041.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 143050.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 1411101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 1411102.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 1419441.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 1410411.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 1411103.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 1411104.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 1430501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rh31.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 1411105.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 1411106.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 1411107.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 1411108.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 1411109.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 14111010.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 14111011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 14111012.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator_icon-icons.com_720461.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator_icon-icons.com_720462.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator_icon-icons.com_720463.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator_icon-icons.com_720464.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator_icon-icons.com_720465.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator_icon-icons.com_720466.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator_icon-icons.com_720467.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator_icon-icons.com_720468.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rh4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator_icon-icons.com_720469.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 143336.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 1430502.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator_icon-icons.com_7204610.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 14111013.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator_icon-icons.com_7204611.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

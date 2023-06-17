@@ -43,6 +43,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(15, 13);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -62,6 +63,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(19, 68);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -82,7 +84,7 @@
             // 
             this.panel1Resultado.BackColor = System.Drawing.Color.Silver;
             this.panel1Resultado.Controls.Add(this.lblResultado);
-            this.panel1Resultado.Location = new System.Drawing.Point(19, 131);
+            this.panel1Resultado.Location = new System.Drawing.Point(104, 222);
             this.panel1Resultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1Resultado.Name = "panel1Resultado";
             this.panel1Resultado.Size = new System.Drawing.Size(346, 41);
@@ -101,7 +103,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(409, 222);
+            this.button1.Location = new System.Drawing.Point(479, 361);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 23);
             this.button1.TabIndex = 6;
@@ -111,24 +113,27 @@
             // 
             // button1Resultado
             // 
-            this.button1Resultado.BackgroundImage = global::iRh.Windows.Properties.Resources.icons8_calculadora_1001;
+            this.button1Resultado.BackColor = System.Drawing.Color.Transparent;
+            this.button1Resultado.BackgroundImage = global::iRh.Windows.Properties.Resources.calculator_icon_icons2;
             this.button1Resultado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1Resultado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1Resultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1Resultado.Location = new System.Drawing.Point(176, 177);
+            this.button1Resultado.Location = new System.Drawing.Point(223, 263);
             this.button1Resultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1Resultado.Name = "button1Resultado";
-            this.button1Resultado.Size = new System.Drawing.Size(96, 67);
+            this.button1Resultado.Size = new System.Drawing.Size(86, 121);
             this.button1Resultado.TabIndex = 5;
             this.button1Resultado.Text = "CALCULAR";
             this.button1Resultado.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1Resultado.UseVisualStyleBackColor = true;
+            this.button1Resultado.UseVisualStyleBackColor = false;
             this.button1Resultado.Click += new System.EventHandler(this.button1Resultado_Click);
             // 
             // frmBeneficioFerias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(491, 245);
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_17_1411102;
+            this.ClientSize = new System.Drawing.Size(563, 383);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button1Resultado);
             this.Controls.Add(this.panel1Resultado);

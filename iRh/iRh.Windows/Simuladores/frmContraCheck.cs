@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using iRh.Windows.Core;
+using System;
 using System.Windows.Forms;
-using iRh.Windows.Core;
 
 namespace iRh.Windows.Simuladores
 {
@@ -52,7 +45,7 @@ namespace iRh.Windows.Simuladores
                 double horasNoturnas = double.Parse(txtHorasNoturnas.Text);
                 double horasPericulosidade= double.Parse(txtHorasPericulosidade.Text);
                 horasExtras = HoraExtra.Calcula(salario, horasExtras);
-                var valorAdicionalNoturno = AdicionalNoturno.Calcula(salario, horasExtras);
+                var valorAdicionalNoturno = AdicionalNoturno.Calcula(salario, horasNoturnas);
                 horasPericulosidade = Periculosidade.Calcula(salario, horasPericulosidade);
                 if (radioButtonSim.Checked) 
                 {
@@ -65,37 +58,36 @@ namespace iRh.Windows.Simuladores
                 var descontoFgts = Fgts.Calcula(salario);
                 var adicionais = horasExtras + valorAdicionalNoturno + horasPericulosidade;
                 var descontos = descontoInss + descontoFgts + inpostoIrrf + descontoValeTransporte;
+                var valorLiquido = salario + adicionais;
 
-                label6.Text = "SALÁRIO BASE: R$ R$" + salario.ToString("F2");
-                panel1.Show();
+                lblResultado.Text = "-DETALHAMENTO-" + "\n" + "\n"+
 
-                label7.Text = "HORAS EXTRAS: + R$" + horasExtras.ToString("F2");
-                panel2.Show();
+                "SALÁRIO BASE: R$ R$" + salario.ToString("F2") + "\n" + "\n" +
 
-                label8.Text = "ADICIONAL NOTURNO: + R$" + valorAdicionalNoturno.ToString("F2");
-                panel3.Show();
+                "HORAS EXTRAS: + R$" + horasExtras.ToString("F2") + "\n" + "\n" +
 
-                label9.Text = "ADICIONAL PERICULOSIDADE : + R$" + horasPericulosidade.ToString("F2");
-                panel4.Show();
+                "ADICIONAL NOTURNO: + R$" + valorAdicionalNoturno.ToString("F2") + "\n" + "\n" +
 
-                label10.Text = "VALE-TRANSPORTE: R$ -" + descontoValeTransporte.ToString("F2");
-                panel5.Show();
+                "ADICIONAL PERICULOSIDADE : + R$" + horasPericulosidade.ToString("F2") + "\n" + "\n" +
 
-                label11.Text = "DESCONTO INSS : - R$" + descontoInss.ToString("F2");
-                panel6.Show();
+                "VALE-TRANSPORTE: - R$ " + descontoValeTransporte.ToString("F2") + "\n" + "\n" +
 
-                label12.Text = "DESCONTO IRRF: - R$" + inpostoIrrf.ToString("F2");
-                panel7.Show();
+                "DESCONTO INSS : - R$" + descontoInss.ToString("F2") + "\n" + "\n" +
 
-                label13.Text = "DESCONTO FGTS: - R$" + descontoFgts.ToString("F2");
-                panel8.Show();
+                "DESCONTO IRRF: - R$" + inpostoIrrf.ToString("F2") + "\n" + "\n" +
 
-                label14.Text = "TOTAL ADICIONAIS + : R$" + adicionais.ToString("F2");
-                panel9.Show();
+                "DESCONTO FGTS: - R$" + descontoFgts.ToString("F2") + "\n" + "\n"+"\n" + "\n" +
+                "-----------------------------------------------------------------------"+
 
-                label15.Text = "TOTAL ADICIONAIS + : R$" + adicionais.ToString("F2");
-                panel10.Show();
+                                               "-RESULTADO-" + "\n" + "\n"+
 
+                "TOTAL ADICIONAIS : + R$" + adicionais.ToString("F2") + "\n" + "\n" +
+
+                "TOTAL DESCONTOS : - R$" + descontos.ToString("F2") + "\n" + "\n" + "\n" +
+
+                "SALÁRIO LIQUIDO: R$" + valorLiquido.ToString("F2");
+
+                panelResultado.Visible = true;
 
             }
             catch (Exception)
@@ -105,5 +97,6 @@ namespace iRh.Windows.Simuladores
             }
         }
 
+      
     }
 }

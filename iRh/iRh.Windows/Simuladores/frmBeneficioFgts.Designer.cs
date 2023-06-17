@@ -41,6 +41,7 @@
             // lblValorEmConta
             // 
             this.lblValorEmConta.AutoSize = true;
+            this.lblValorEmConta.BackColor = System.Drawing.Color.Transparent;
             this.lblValorEmConta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValorEmConta.Location = new System.Drawing.Point(15, 13);
             this.lblValorEmConta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -61,7 +62,7 @@
             // 
             this.panelResultado.BackColor = System.Drawing.Color.Silver;
             this.panelResultado.Controls.Add(this.lblResultado);
-            this.panelResultado.Location = new System.Drawing.Point(13, 110);
+            this.panelResultado.Location = new System.Drawing.Point(118, 217);
             this.panelResultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panelResultado.Name = "panelResultado";
             this.panelResultado.Size = new System.Drawing.Size(371, 48);
@@ -80,7 +81,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(295, 214);
+            this.button1.Location = new System.Drawing.Point(498, 351);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(81, 23);
             this.button1.TabIndex = 4;
@@ -90,25 +91,27 @@
             // 
             // btnCalcularFtgs
             // 
-            this.btnCalcularFtgs.BackgroundImage = global::iRh.Windows.Properties.Resources.icons8_calculadora_1002;
+            this.btnCalcularFtgs.BackColor = System.Drawing.Color.Transparent;
+            this.btnCalcularFtgs.BackgroundImage = global::iRh.Windows.Properties.Resources.calculator_icon_icons3;
             this.btnCalcularFtgs.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCalcularFtgs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCalcularFtgs.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcularFtgs.Location = new System.Drawing.Point(170, 161);
+            this.btnCalcularFtgs.Location = new System.Drawing.Point(253, 271);
             this.btnCalcularFtgs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCalcularFtgs.Name = "btnCalcularFtgs";
-            this.btnCalcularFtgs.Size = new System.Drawing.Size(82, 76);
+            this.btnCalcularFtgs.Size = new System.Drawing.Size(86, 111);
             this.btnCalcularFtgs.TabIndex = 2;
             this.btnCalcularFtgs.Text = "CALCULAR";
             this.btnCalcularFtgs.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnCalcularFtgs.UseVisualStyleBackColor = true;
+            this.btnCalcularFtgs.UseVisualStyleBackColor = false;
             this.btnCalcularFtgs.Click += new System.EventHandler(this.btnCalcularFtgs_Click);
             // 
             // frmBeneficioFgts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(377, 238);
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_17_1411103;
+            this.ClientSize = new System.Drawing.Size(581, 386);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panelResultado);
             this.Controls.Add(this.btnCalcularFtgs);

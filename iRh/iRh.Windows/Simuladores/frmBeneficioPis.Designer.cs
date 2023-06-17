@@ -46,6 +46,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(15, 13);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -66,6 +67,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(19, 70);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -85,6 +87,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(22, 125);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -106,7 +109,7 @@
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.Controls.Add(this.lbl5Resultado);
             this.panel1.Controls.Add(this.lbl4Resultado);
-            this.panel1.Location = new System.Drawing.Point(22, 179);
+            this.panel1.Location = new System.Drawing.Point(106, 214);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(414, 50);
@@ -135,7 +138,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(482, 296);
+            this.button1.Location = new System.Drawing.Point(515, 352);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(86, 23);
             this.button1.TabIndex = 8;
@@ -145,24 +148,27 @@
             // 
             // buttonResultado
             // 
-            this.buttonResultado.BackgroundImage = global::iRh.Windows.Properties.Resources.icons8_calculadora_1005;
+            this.buttonResultado.BackColor = System.Drawing.Color.Transparent;
+            this.buttonResultado.BackgroundImage = global::iRh.Windows.Properties.Resources.calculator_icon_icons6;
             this.buttonResultado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonResultado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonResultado.Location = new System.Drawing.Point(232, 240);
+            this.buttonResultado.Location = new System.Drawing.Point(268, 264);
             this.buttonResultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonResultado.Name = "buttonResultado";
-            this.buttonResultado.Size = new System.Drawing.Size(80, 68);
+            this.buttonResultado.Size = new System.Drawing.Size(83, 110);
             this.buttonResultado.TabIndex = 6;
-            this.buttonResultado.Text = "CALCULAR ";
+            this.buttonResultado.Text = "CALCULAR";
             this.buttonResultado.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonResultado.UseVisualStyleBackColor = true;
+            this.buttonResultado.UseVisualStyleBackColor = false;
             this.buttonResultado.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmBeneficioPis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(571, 320);
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_17_1411107;
+            this.ClientSize = new System.Drawing.Size(600, 375);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonResultado);

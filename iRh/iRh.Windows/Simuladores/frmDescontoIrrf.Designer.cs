@@ -41,6 +41,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(15, 13);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -51,6 +52,7 @@
             // 
             // txtSalario
             // 
+            this.txtSalario.Cursor = System.Windows.Forms.Cursors.Hand;
             this.txtSalario.Location = new System.Drawing.Point(19, 29);
             this.txtSalario.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtSalario.Name = "txtSalario";
@@ -61,7 +63,7 @@
             // 
             this.panelResultado.BackColor = System.Drawing.Color.Silver;
             this.panelResultado.Controls.Add(this.lblResultado);
-            this.panelResultado.Location = new System.Drawing.Point(19, 94);
+            this.panelResultado.Location = new System.Drawing.Point(118, 219);
             this.panelResultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panelResultado.Name = "panelResultado";
             this.panelResultado.Size = new System.Drawing.Size(308, 42);
@@ -80,35 +82,37 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(273, 195);
+            this.button2.Location = new System.Drawing.Point(458, 353);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(85, 23);
             this.button2.TabIndex = 4;
             this.button2.Text = "CANCELAR";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+      
             // 
             // button1
             // 
-            this.button1.BackgroundImage = global::iRh.Windows.Properties.Resources.icons8_calculadora_1009;
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.BackgroundImage = global::iRh.Windows.Properties.Resources.calculator_icon_icons1;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(121, 147);
+            this.button1.Location = new System.Drawing.Point(231, 267);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 63);
+            this.button1.Size = new System.Drawing.Size(79, 109);
             this.button1.TabIndex = 3;
             this.button1.Text = "CALCULAR ";
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // frmDescontoIrrf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(358, 222);
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_17_14111010;
+            this.ClientSize = new System.Drawing.Size(539, 375);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panelResultado);

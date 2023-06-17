@@ -43,6 +43,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(15, 13);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -69,6 +70,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Location = new System.Drawing.Point(15, 83);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
@@ -80,7 +82,7 @@
             // 
             this.panelResultado.BackColor = System.Drawing.Color.Silver;
             this.panelResultado.Controls.Add(this.labelResultado);
-            this.panelResultado.Location = new System.Drawing.Point(19, 157);
+            this.panelResultado.Location = new System.Drawing.Point(115, 196);
             this.panelResultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panelResultado.Name = "panelResultado";
             this.panelResultado.Size = new System.Drawing.Size(363, 56);
@@ -99,7 +101,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(320, 280);
+            this.button1.Location = new System.Drawing.Point(509, 353);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(87, 23);
             this.button1.TabIndex = 9;
@@ -109,24 +111,26 @@
             // 
             // buttonCalcular
             // 
-            this.buttonCalcular.BackgroundImage = global::iRh.Windows.Properties.Resources.icons8_calculadora_1004;
+            this.buttonCalcular.BackColor = System.Drawing.Color.Transparent;
+            this.buttonCalcular.BackgroundImage = global::iRh.Windows.Properties.Resources.calculator_icon_icons5;
             this.buttonCalcular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonCalcular.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonCalcular.Location = new System.Drawing.Point(154, 219);
+            this.buttonCalcular.Location = new System.Drawing.Point(237, 258);
             this.buttonCalcular.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonCalcular.Name = "buttonCalcular";
-            this.buttonCalcular.Size = new System.Drawing.Size(88, 74);
+            this.buttonCalcular.Size = new System.Drawing.Size(95, 118);
             this.buttonCalcular.TabIndex = 5;
             this.buttonCalcular.Text = "CALCULAR";
             this.buttonCalcular.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonCalcular.UseVisualStyleBackColor = true;
+            this.buttonCalcular.UseVisualStyleBackColor = false;
             this.buttonCalcular.Click += new System.EventHandler(this.buttonCalcular_Click);
             // 
             // frmBeneficioPericulosidade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(407, 301);
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_17_1411106;
+            this.ClientSize = new System.Drawing.Size(597, 375);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtHorasPericulo0sidade2);
             this.Controls.Add(this.panelResultado);

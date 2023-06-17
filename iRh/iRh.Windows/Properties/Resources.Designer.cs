@@ -63,6 +63,116 @@ namespace iRh.Windows.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calculator_icon_icons_com_72046 {
+            get {
+                object obj = ResourceManager.GetObject("calculator_icon-icons.com_72046", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calculator_icon_icons1 {
+            get {
+                object obj = ResourceManager.GetObject("calculator_icon-icons1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calculator_icon_icons10 {
+            get {
+                object obj = ResourceManager.GetObject("calculator_icon-icons10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calculator_icon_icons2 {
+            get {
+                object obj = ResourceManager.GetObject("calculator_icon-icons2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calculator_icon_icons3 {
+            get {
+                object obj = ResourceManager.GetObject("calculator_icon-icons3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calculator_icon_icons4 {
+            get {
+                object obj = ResourceManager.GetObject("calculator_icon-icons4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calculator_icon_icons5 {
+            get {
+                object obj = ResourceManager.GetObject("calculator_icon-icons5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calculator_icon_icons6 {
+            get {
+                object obj = ResourceManager.GetObject("calculator_icon-icons6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calculator_icon_icons7 {
+            get {
+                object obj = ResourceManager.GetObject("calculator_icon-icons7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calculator_icon_icons8 {
+            get {
+                object obj = ResourceManager.GetObject("calculator_icon-icons8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calculator_icon_icons9 {
+            get {
+                object obj = ResourceManager.GetObject("calculator_icon-icons9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Captura_de_tela_2023_06_08_175715 {
             get {
                 object obj = ResourceManager.GetObject("Captura de tela 2023-06-08 175715", resourceCulture);
@@ -186,6 +296,196 @@ namespace iRh.Windows.Properties {
         internal static System.Drawing.Bitmap Captura_de_tela_2023_06_09_2227521 {
             get {
                 object obj = ResourceManager.GetObject("Captura de tela 2023-06-09 2227521", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_17_141041 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-17 141041", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_17_1410411 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-17 1410411", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_17_141110 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-17 141110", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_17_1411101 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-17 1411101", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_17_14111010 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-17 14111010", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_17_1411102 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-17 1411102", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_17_1411103 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-17 1411103", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_17_1411104 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-17 1411104", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_17_1411105 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-17 1411105", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_17_1411106 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-17 1411106", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_17_1411107 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-17 1411107", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_17_1411108 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-17 1411108", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_17_1411109 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-17 1411109", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_17_141944 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-17 141944", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_17_1419441 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-17 1419441", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_17_143050 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-17 143050", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_17_1430501 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-17 1430501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_17_1430502 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-17 1430502", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Captura_de_tela_2023_06_17_143336 {
+            get {
+                object obj = ResourceManager.GetObject("Captura de tela 2023-06-17 143336", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -346,6 +646,46 @@ namespace iRh.Windows.Properties {
         internal static System.Drawing.Bitmap rh2 {
             get {
                 object obj = ResourceManager.GetObject("rh2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rh21 {
+            get {
+                object obj = ResourceManager.GetObject("rh21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rh3 {
+            get {
+                object obj = ResourceManager.GetObject("rh3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rh31 {
+            get {
+                object obj = ResourceManager.GetObject("rh31", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rh4 {
+            get {
+                object obj = ResourceManager.GetObject("rh4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

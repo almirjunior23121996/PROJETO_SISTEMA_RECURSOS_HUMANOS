@@ -46,6 +46,7 @@
             // lblSalario
             // 
             this.lblSalario.AutoSize = true;
+            this.lblSalario.BackColor = System.Drawing.Color.Transparent;
             this.lblSalario.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSalario.Location = new System.Drawing.Point(14, 9);
             this.lblSalario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -57,6 +58,7 @@
             // lblValorPassagem
             // 
             this.lblValorPassagem.AutoSize = true;
+            this.lblValorPassagem.BackColor = System.Drawing.Color.Transparent;
             this.lblValorPassagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblValorPassagem.Location = new System.Drawing.Point(14, 63);
             this.lblValorPassagem.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -68,7 +70,7 @@
             // lblPassagens
             // 
             this.lblPassagens.AutoSize = true;
-            this.lblPassagens.BackColor = System.Drawing.SystemColors.Control;
+            this.lblPassagens.BackColor = System.Drawing.Color.Transparent;
             this.lblPassagens.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassagens.Location = new System.Drawing.Point(10, 117);
             this.lblPassagens.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -106,7 +108,7 @@
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.Controls.Add(this.lblResultado2);
             this.panel1.Controls.Add(this.lblResultado);
-            this.panel1.Location = new System.Drawing.Point(0, 159);
+            this.panel1.Location = new System.Drawing.Point(168, 207);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(322, 67);
@@ -135,7 +137,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(333, 285);
+            this.button1.Location = new System.Drawing.Point(528, 359);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 23);
             this.button1.TabIndex = 8;
@@ -145,17 +147,18 @@
             // 
             // btnCalcular
             // 
-            this.btnCalcular.BackgroundImage = global::iRh.Windows.Properties.Resources.icons8_calculadora_1007;
+            this.btnCalcular.BackColor = System.Drawing.Color.Transparent;
+            this.btnCalcular.BackgroundImage = global::iRh.Windows.Properties.Resources.calculator_icon_icons8;
             this.btnCalcular.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btnCalcular.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCalcular.Location = new System.Drawing.Point(147, 231);
+            this.btnCalcular.Location = new System.Drawing.Point(270, 269);
             this.btnCalcular.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(88, 64);
+            this.btnCalcular.Size = new System.Drawing.Size(88, 113);
             this.btnCalcular.TabIndex = 6;
             this.btnCalcular.Text = "CALCULAR";
             this.btnCalcular.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.UseVisualStyleBackColor = false;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // frmBeneficioValeTransporte
@@ -163,7 +166,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(418, 307);
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_17_1411109;
+            this.ClientSize = new System.Drawing.Size(612, 383);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnCalcular);

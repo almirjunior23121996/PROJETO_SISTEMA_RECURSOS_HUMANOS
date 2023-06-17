@@ -43,6 +43,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
@@ -53,6 +54,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(13, 62);
             this.label2.Name = "label2";
@@ -78,7 +80,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.Controls.Add(this.lblResultado);
-            this.panel1.Location = new System.Drawing.Point(16, 123);
+            this.panel1.Location = new System.Drawing.Point(138, 230);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(345, 36);
             this.panel1.TabIndex = 4;
@@ -97,7 +99,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(328, 229);
+            this.button1.Location = new System.Drawing.Point(519, 352);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(86, 23);
             this.button1.TabIndex = 6;
@@ -107,24 +109,27 @@
             // 
             // buttonResultado
             // 
-            this.buttonResultado.BackgroundImage = global::iRh.Windows.Properties.Resources.icons8_calculadora_1006;
+            this.buttonResultado.BackColor = System.Drawing.Color.Transparent;
+            this.buttonResultado.BackgroundImage = global::iRh.Windows.Properties.Resources.calculator_icon_icons7;
             this.buttonResultado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonResultado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonResultado.Location = new System.Drawing.Point(150, 167);
+            this.buttonResultado.Location = new System.Drawing.Point(271, 263);
             this.buttonResultado.Name = "buttonResultado";
-            this.buttonResultado.Size = new System.Drawing.Size(79, 73);
+            this.buttonResultado.Size = new System.Drawing.Size(86, 111);
             this.buttonResultado.TabIndex = 5;
             this.buttonResultado.Text = "CALCULAR";
             this.buttonResultado.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.buttonResultado.UseVisualStyleBackColor = true;
+            this.buttonResultado.UseVisualStyleBackColor = false;
             this.buttonResultado.Click += new System.EventHandler(this.buttonResultado_Click);
             // 
             // frmBeneficioSeguroDesemprego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(417, 252);
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_17_1411108;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(604, 376);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonResultado);
             this.Controls.Add(this.panel1);
@@ -132,6 +137,7 @@
             this.Controls.Add(this.txtVezesSolicitados);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBeneficioSeguroDesemprego";
             this.Text = "SEGURO DESEMPREGO";
