@@ -44,6 +44,7 @@
             this.menuBeneficioPis = new System.Windows.Forms.ToolStripMenuItem();
             this.menuBeneficioSeguroDesemprego = new System.Windows.Forms.ToolStripMenuItem();
             this.menuBeneficioValeTransporte = new System.Windows.Forms.ToolStripMenuItem();
+            this.simuladorCompletoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPrincipal.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,7 +89,8 @@
             this.menuBeneficioPericulosidade,
             this.menuBeneficioPis,
             this.menuBeneficioSeguroDesemprego,
-            this.menuBeneficioValeTransporte});
+            this.menuBeneficioValeTransporte,
+            this.simuladorCompletoToolStripMenuItem});
             this.simuladoresToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simuladoresToolStripMenuItem.Name = "simuladoresToolStripMenuItem";
             this.simuladoresToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
@@ -169,6 +171,13 @@
             this.menuBeneficioValeTransporte.Text = "Beneficio de Vale Transporte";
             this.menuBeneficioValeTransporte.Click += new System.EventHandler(this.menuBeneficioValeTransporte_Click);
             // 
+            // simuladorCompletoToolStripMenuItem
+            // 
+            this.simuladorCompletoToolStripMenuItem.Name = "simuladorCompletoToolStripMenuItem";
+            this.simuladorCompletoToolStripMenuItem.Size = new System.Drawing.Size(262, 22);
+            this.simuladorCompletoToolStripMenuItem.Text = "SimuladorCompleto";
+            this.simuladorCompletoToolStripMenuItem.Click += new System.EventHandler(this.simuladorCompletoToolStripMenuItem_Click);
+            // 
             // PrincipalMdi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
@@ -179,6 +188,7 @@
             this.Controls.Add(this.menuPrincipal);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuPrincipal;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "PrincipalMdi";
@@ -209,5 +219,6 @@
         private System.Windows.Forms.ToolStripMenuItem menuBeneficioPis;
         private System.Windows.Forms.ToolStripMenuItem menuBeneficioSeguroDesemprego;
         private System.Windows.Forms.ToolStripMenuItem menuBeneficioValeTransporte;
+        private System.Windows.Forms.ToolStripMenuItem simuladorCompletoToolStripMenuItem;
     }
 }

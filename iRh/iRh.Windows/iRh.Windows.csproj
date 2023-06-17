@@ -66,6 +66,7 @@
     <Compile Include="Core\Irrf.cs" />
     <Compile Include="Core\Periculosidade.cs" />
     <Compile Include="Core\Pis.cs" />
+    <Compile Include="Core\valeTransporte.cs" />
     <Compile Include="PrincipalMdi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +135,12 @@
     <Compile Include="Simuladores\frmDescontoIrrf.Designer.cs">
       <DependentUpon>frmDescontoIrrf.cs</DependentUpon>
     </Compile>
+    <Compile Include="Simuladores\frmContraCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simuladores\frmContraCheck.Designer.cs">
+      <DependentUpon>frmContraCheck.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Cadastros\frmFuncionario.resx">
       <DependentUpon>frmFuncionario.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Simuladores\frmDescontoIrrf.resx">
       <DependentUpon>frmDescontoIrrf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simuladores\frmContraCheck.resx">
+      <DependentUpon>frmContraCheck.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

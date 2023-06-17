@@ -93,5 +93,12 @@ namespace iRh.Windows
             form.MdiParent = this;
             form.Show();
         }
+
+        private void simuladorCompletoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form = new frmContraCheck();
+            form.MdiParent = this;
+            form.Show();
+        }
     }
 }
