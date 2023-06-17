@@ -275,5 +275,8 @@
   <ItemGroup>
     <None Include="Resources\icons8-calculadora-1009.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rh.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

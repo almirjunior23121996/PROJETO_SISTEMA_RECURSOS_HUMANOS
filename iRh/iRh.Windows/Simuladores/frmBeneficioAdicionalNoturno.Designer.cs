@@ -37,9 +37,7 @@
             this.lblResultado = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelResultado.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblSalario
@@ -86,7 +84,7 @@
             // 
             this.panelResultado.BackColor = System.Drawing.Color.Silver;
             this.panelResultado.Controls.Add(this.lblResultado);
-            this.panelResultado.Location = new System.Drawing.Point(19, 150);
+            this.panelResultado.Location = new System.Drawing.Point(60, 187);
             this.panelResultado.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panelResultado.Name = "panelResultado";
             this.panelResultado.Size = new System.Drawing.Size(357, 52);
@@ -105,7 +103,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(306, 284);
+            this.button1.Location = new System.Drawing.Point(448, 349);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(89, 23);
             this.button1.TabIndex = 6;
@@ -121,7 +119,7 @@
             this.btnCalcular.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(131, 217);
+            this.btnCalcular.Location = new System.Drawing.Point(196, 245);
             this.btnCalcular.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(80, 72);
@@ -131,20 +129,12 @@
             this.btnCalcular.UseVisualStyleBackColor = false;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_08_175715;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(393, 307);
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
             // BeneficioAdicionalNoturno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(393, 311);
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.rh1;
+            this.ClientSize = new System.Drawing.Size(537, 372);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panelResultado);
             this.Controls.Add(this.btnCalcular);
@@ -152,7 +142,6 @@
             this.Controls.Add(this.txtSalarioTotal);
             this.Controls.Add(this.lblHorasNoturnas);
             this.Controls.Add(this.lblSalario);
-            this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -160,7 +149,6 @@
             this.Text = " ADICIONAL NOTURNO";
             this.panelResultado.ResumeLayout(false);
             this.panelResultado.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,6 +164,5 @@
         private System.Windows.Forms.Panel panelResultado;
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
