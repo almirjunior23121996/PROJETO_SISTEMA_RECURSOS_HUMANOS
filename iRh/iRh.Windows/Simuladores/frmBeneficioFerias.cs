@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Threading;
 using System.Windows.Forms;
 using iRh.Windows.Core;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace iRh.Windows.Simuladores
 {
@@ -13,12 +15,20 @@ namespace iRh.Windows.Simuladores
 
         private void button1Resultado_Click(object sender, EventArgs e)
         {
+            progressBarCarregar.Visible = true;
+            progressBarCarregar.Value = 0;
+            for (int i = 0; i <= progressBarCarregar.Maximum; i++)
+            {
+                progressBarCarregar.Value = i;
+                Thread.Sleep(1);
+            }
+            progressBarCarregar.Visible = false;
             try 
             {
 
                 if (string.IsNullOrEmpty(txtSalario.Text))
                 {
-                    MessageBox.Show("Informe vezes solicitadas.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Informe seu salario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtSalario.Focus();
                     return;
                 }
@@ -55,7 +65,7 @@ namespace iRh.Windows.Simuladores
             }
             catch(Exception)
             {
-                MessageBox.Show("Preencha todos os campos necessarios.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Preencha todos os campos Corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

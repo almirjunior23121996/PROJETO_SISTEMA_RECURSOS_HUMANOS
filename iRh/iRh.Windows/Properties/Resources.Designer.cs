@@ -623,6 +623,16 @@ namespace iRh.Windows.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_1137095355_1024x1024 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-1137095355-1024x1024", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rh {
             get {
                 object obj = ResourceManager.GetObject("rh", resourceCulture);

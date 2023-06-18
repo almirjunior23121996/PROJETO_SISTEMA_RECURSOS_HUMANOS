@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Windows.Forms;
 using iRh.Windows.Core;
 
@@ -14,7 +15,16 @@ namespace iRh.Windows.Simuladores
 
         private void btnCalcularFtgs_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(txtValorEmConta.Text))
+            progressBarCarregar.Visible = true;
+            progressBarCarregar.Value = 0;
+            for (int i = 0; i <= progressBarCarregar.Maximum; i++)
+            {
+                progressBarCarregar.Value = i;
+                Thread.Sleep(1);
+            }
+            progressBarCarregar.Visible = false;
+
+            if (string.IsNullOrEmpty(txtValorEmConta.Text))
             {
                 MessageBox.Show("Informe um valor.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtValorEmConta.Focus();
@@ -30,7 +40,7 @@ namespace iRh.Windows.Simuladores
                 }
                 catch (Exception)
                 {
-                    MessageBox.Show("Informe um valor válido.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Preecha todos os campos Corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     
                     
                 }

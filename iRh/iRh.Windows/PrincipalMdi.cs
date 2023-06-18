@@ -2,6 +2,7 @@
 using System;
 using System.Windows.Forms;
 using iRh.Windows.Cadastros;
+using System.Threading;
 
 namespace iRh.Windows
 {
@@ -19,6 +20,7 @@ namespace iRh.Windows
 
         private void menuDescontoInss_Click(object sender, EventArgs e)
         {
+            
             var form = new lblSalarioBase();
             form.MdiParent = this;
             form.Show();

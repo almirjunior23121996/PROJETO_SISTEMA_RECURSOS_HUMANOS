@@ -41,6 +41,7 @@
             this.radioButtonSim = new System.Windows.Forms.RadioButton();
             this.panelResultado = new System.Windows.Forms.Panel();
             this.lblResultado = new System.Windows.Forms.Label();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.panelResultado.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -181,6 +182,14 @@
             this.lblResultado.TabIndex = 0;
             this.lblResultado.Text = "RESULTADO";
             // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(27, 337);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(153, 23);
+            this.progressBar1.TabIndex = 15;
+            this.progressBar1.Visible = false;
+            // 
             // frmContraCheck
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
@@ -188,6 +197,7 @@
             this.BackgroundImage = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_17_14111010;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(761, 484);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.panelResultado);
             this.Controls.Add(this.radioButtonSim);
             this.Controls.Add(this.btnCalcular);
@@ -204,7 +214,8 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmContraCheck";
-            this.Text = "CONTRA CHECK";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "CONTRACHEQUE";
             this.panelResultado.ResumeLayout(false);
             this.panelResultado.PerformLayout();
             this.ResumeLayout(false);
@@ -227,5 +238,6 @@
         private System.Windows.Forms.RadioButton radioButtonSim;
         private System.Windows.Forms.Panel panelResultado;
         private System.Windows.Forms.Label lblResultado;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using iRh.Windows.Core;
 using System;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace iRh.Windows.Simuladores
@@ -13,6 +14,15 @@ namespace iRh.Windows.Simuladores
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
+            progressBarCarregar.Visible = true;
+            progressBarCarregar.Value = 0;
+            for (int i = 0; i <= progressBarCarregar.Maximum; i++)
+            {
+                progressBarCarregar.Value = i;
+                Thread.Sleep(1);
+            }
+            progressBarCarregar.Visible = false;
+
             if (string.IsNullOrEmpty(txtSalarioBase.Text))
             {
                 MessageBox.Show("Informe seu salário base.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -29,7 +39,7 @@ namespace iRh.Windows.Simuladores
             }
             catch (Exception)
             {
-                MessageBox.Show("Preencha todos os campos necessarios;", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Preencha todos os campos Corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             
             }
         

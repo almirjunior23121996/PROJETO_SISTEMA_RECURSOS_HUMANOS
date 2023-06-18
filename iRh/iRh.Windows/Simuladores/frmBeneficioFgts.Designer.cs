@@ -35,6 +35,7 @@
             this.lblResultado = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnCalcularFtgs = new System.Windows.Forms.Button();
+            this.progressBarCarregar = new System.Windows.Forms.ProgressBar();
             this.panelResultado.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -106,12 +107,21 @@
             this.btnCalcularFtgs.UseVisualStyleBackColor = false;
             this.btnCalcularFtgs.Click += new System.EventHandler(this.btnCalcularFtgs_Click);
             // 
+            // progressBarCarregar
+            // 
+            this.progressBarCarregar.Location = new System.Drawing.Point(204, 174);
+            this.progressBarCarregar.Name = "progressBarCarregar";
+            this.progressBarCarregar.Size = new System.Drawing.Size(177, 23);
+            this.progressBarCarregar.TabIndex = 5;
+            this.progressBarCarregar.Visible = false;
+            // 
             // frmBeneficioFgts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_17_1411103;
             this.ClientSize = new System.Drawing.Size(581, 386);
+            this.Controls.Add(this.progressBarCarregar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panelResultado);
             this.Controls.Add(this.btnCalcularFtgs);
@@ -121,6 +131,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmBeneficioFgts";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MULTA FGTS";
             this.panelResultado.ResumeLayout(false);
             this.panelResultado.PerformLayout();
@@ -137,5 +148,6 @@
         private System.Windows.Forms.Panel panelResultado;
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ProgressBar progressBarCarregar;
     }
 }

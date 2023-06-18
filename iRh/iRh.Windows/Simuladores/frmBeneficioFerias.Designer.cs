@@ -37,6 +37,7 @@
             this.lblResultado = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button1Resultado = new System.Windows.Forms.Button();
+            this.progressBarCarregar = new System.Windows.Forms.ProgressBar();
             this.panel1Resultado.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -128,12 +129,20 @@
             this.button1Resultado.UseVisualStyleBackColor = false;
             this.button1Resultado.Click += new System.EventHandler(this.button1Resultado_Click);
             // 
+            // progressBarCarregar
+            // 
+            this.progressBarCarregar.Location = new System.Drawing.Point(183, 186);
+            this.progressBarCarregar.Name = "progressBarCarregar";
+            this.progressBarCarregar.Size = new System.Drawing.Size(168, 23);
+            this.progressBarCarregar.TabIndex = 7;
+            // 
             // frmBeneficioFerias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_17_1411102;
             this.ClientSize = new System.Drawing.Size(563, 383);
+            this.Controls.Add(this.progressBarCarregar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button1Resultado);
             this.Controls.Add(this.panel1Resultado);
@@ -145,6 +154,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmBeneficioFerias";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CALCULO FÉRIAS";
             this.panel1Resultado.ResumeLayout(false);
             this.panel1Resultado.PerformLayout();
@@ -163,5 +173,6 @@
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Button button1Resultado;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ProgressBar progressBarCarregar;
     }
 }

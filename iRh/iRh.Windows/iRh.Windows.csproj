@@ -402,5 +402,11 @@
   <ItemGroup>
     <None Include="Resources\calculator_icon-icons.com_7204611.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1137095355-1024x1024.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2023-06-17 14111014.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

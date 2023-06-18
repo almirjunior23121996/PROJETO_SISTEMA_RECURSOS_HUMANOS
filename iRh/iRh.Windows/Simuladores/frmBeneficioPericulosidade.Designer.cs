@@ -37,6 +37,7 @@
             this.labelResultado = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonCalcular = new System.Windows.Forms.Button();
+            this.progressBarCarregar = new System.Windows.Forms.ProgressBar();
             this.panelResultado.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -125,12 +126,21 @@
             this.buttonCalcular.UseVisualStyleBackColor = false;
             this.buttonCalcular.Click += new System.EventHandler(this.buttonCalcular_Click);
             // 
+            // progressBarCarregar
+            // 
+            this.progressBarCarregar.Location = new System.Drawing.Point(193, 167);
+            this.progressBarCarregar.Name = "progressBarCarregar";
+            this.progressBarCarregar.Size = new System.Drawing.Size(191, 23);
+            this.progressBarCarregar.TabIndex = 10;
+            this.progressBarCarregar.Visible = false;
+            // 
             // frmBeneficioPericulosidade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_17_1411106;
             this.ClientSize = new System.Drawing.Size(597, 375);
+            this.Controls.Add(this.progressBarCarregar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtHorasPericulo0sidade2);
             this.Controls.Add(this.panelResultado);
@@ -142,6 +152,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmBeneficioPericulosidade";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ADICIONAL PERICULOSIDADE ";
             this.panelResultado.ResumeLayout(false);
             this.panelResultado.PerformLayout();
@@ -160,5 +171,6 @@
         private System.Windows.Forms.Panel panelResultado;
         private System.Windows.Forms.Label labelResultado;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ProgressBar progressBarCarregar;
     }
 }

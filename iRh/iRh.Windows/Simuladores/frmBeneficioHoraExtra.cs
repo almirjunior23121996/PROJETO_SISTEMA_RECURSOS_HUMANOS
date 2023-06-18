@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Windows.Forms;
 using iRh.Windows.Core;
 
@@ -15,6 +16,15 @@ namespace iRh.Windows.Simuladores
 
         private void button1Resultado_Click(object sender, EventArgs e)
         {
+            progressBarCarregar.Visible = true;
+            progressBarCarregar.Value = 0;
+            for (int i = 0; i <= progressBarCarregar.Maximum; i++)
+            {
+                progressBarCarregar.Value = i;
+                Thread.Sleep(1);
+            }
+            progressBarCarregar.Visible = false;
+
             try
             {
                 if (string.IsNullOrEmpty(txtSalario.Text))
@@ -39,7 +49,7 @@ namespace iRh.Windows.Simuladores
             }
             catch(Exception)
             {
-                MessageBox.Show("Preecha Todos os Campos necessarios.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Preecha Todos os Campos Corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
 

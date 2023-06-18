@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Windows.Forms;
 namespace iRh.Windows.Simuladores
 {
@@ -11,7 +12,14 @@ namespace iRh.Windows.Simuladores
 
         private void buttonResultado_Click(object sender, EventArgs e)
         {
-            
+            progressBarCarregar.Visible = true;
+            progressBarCarregar.Value = 0;
+            for (int i = 0; i <= progressBarCarregar.Maximum; i++)
+            {
+                progressBarCarregar.Value = i;
+                Thread.Sleep(1);
+            }
+            progressBarCarregar.Visible = false;
 
             try
             {
@@ -99,7 +107,7 @@ namespace iRh.Windows.Simuladores
             }
             catch(Exception)
             {
-                MessageBox.Show("Preencha todos os camposnecessarios.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Preencha todos os Corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

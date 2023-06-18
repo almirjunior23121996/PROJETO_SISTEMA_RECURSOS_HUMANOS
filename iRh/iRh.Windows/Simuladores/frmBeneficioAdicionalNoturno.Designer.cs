@@ -37,6 +37,7 @@
             this.lblResultado = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.btnCalcular = new System.Windows.Forms.Button();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.panelResultado.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -129,12 +130,22 @@
             this.btnCalcular.UseVisualStyleBackColor = false;
             this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(175, 189);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(193, 23);
+            this.progressBar1.TabIndex = 7;
+            this.progressBar1.Visible = false;
+            // 
             // BeneficioAdicionalNoturno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_17_1411101;
+            this.BackgroundImage = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_17_14111010;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(537, 372);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panelResultado);
             this.Controls.Add(this.btnCalcular);
@@ -147,6 +158,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "BeneficioAdicionalNoturno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ADICIONAL NOTURNO";
             this.panelResultado.ResumeLayout(false);
             this.panelResultado.PerformLayout();
@@ -165,5 +177,6 @@
         private System.Windows.Forms.Panel panelResultado;
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }

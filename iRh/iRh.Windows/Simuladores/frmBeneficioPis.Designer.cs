@@ -40,6 +40,7 @@
             this.lbl4Resultado = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonResultado = new System.Windows.Forms.Button();
+            this.progressBarCarregar = new System.Windows.Forms.ProgressBar();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -163,12 +164,21 @@
             this.buttonResultado.UseVisualStyleBackColor = false;
             this.buttonResultado.Click += new System.EventHandler(this.button1_Click);
             // 
+            // progressBarCarregar
+            // 
+            this.progressBarCarregar.Location = new System.Drawing.Point(210, 185);
+            this.progressBarCarregar.Name = "progressBarCarregar";
+            this.progressBarCarregar.Size = new System.Drawing.Size(204, 23);
+            this.progressBarCarregar.TabIndex = 9;
+            this.progressBarCarregar.Visible = false;
+            // 
             // frmBeneficioPis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_17_1411107;
             this.ClientSize = new System.Drawing.Size(600, 375);
+            this.Controls.Add(this.progressBarCarregar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonResultado);
@@ -182,6 +192,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmBeneficioPis";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " PIS";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -203,5 +214,6 @@
         private System.Windows.Forms.Label lbl4Resultado;
         private System.Windows.Forms.Label lbl5Resultado;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ProgressBar progressBarCarregar;
     }
 }

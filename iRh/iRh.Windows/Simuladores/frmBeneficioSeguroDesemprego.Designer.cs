@@ -37,6 +37,7 @@
             this.lblResultado = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonResultado = new System.Windows.Forms.Button();
+            this.progressBarCarregar = new System.Windows.Forms.ProgressBar();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,7 +81,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
             this.panel1.Controls.Add(this.lblResultado);
-            this.panel1.Location = new System.Drawing.Point(138, 230);
+            this.panel1.Location = new System.Drawing.Point(142, 211);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(345, 36);
             this.panel1.TabIndex = 4;
@@ -114,22 +115,31 @@
             this.buttonResultado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.buttonResultado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonResultado.Location = new System.Drawing.Point(271, 263);
+            this.buttonResultado.Location = new System.Drawing.Point(270, 253);
             this.buttonResultado.Name = "buttonResultado";
-            this.buttonResultado.Size = new System.Drawing.Size(86, 111);
+            this.buttonResultado.Size = new System.Drawing.Size(87, 121);
             this.buttonResultado.TabIndex = 5;
             this.buttonResultado.Text = "CALCULAR";
             this.buttonResultado.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.buttonResultado.UseVisualStyleBackColor = false;
             this.buttonResultado.Click += new System.EventHandler(this.buttonResultado_Click);
             // 
+            // progressBarCarregar
+            // 
+            this.progressBarCarregar.Location = new System.Drawing.Point(213, 182);
+            this.progressBarCarregar.Name = "progressBarCarregar";
+            this.progressBarCarregar.Size = new System.Drawing.Size(201, 23);
+            this.progressBarCarregar.TabIndex = 7;
+            this.progressBarCarregar.Visible = false;
+            // 
             // frmBeneficioSeguroDesemprego
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::iRh.Windows.Properties.Resources.Captura_de_tela_2023_06_17_1411108;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(604, 376);
+            this.Controls.Add(this.progressBarCarregar);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonResultado);
             this.Controls.Add(this.panel1);
@@ -140,6 +150,7 @@
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmBeneficioSeguroDesemprego";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SEGURO DESEMPREGO";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -158,5 +169,6 @@
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Button buttonResultado;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ProgressBar progressBarCarregar;
     }
 }
