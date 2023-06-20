@@ -10,7 +10,6 @@ namespace iRh.Windows.Simuladores
         {
             InitializeComponent();
         }
-
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             progressBarCarregar.Visible = true;
@@ -47,7 +46,6 @@ namespace iRh.Windows.Simuladores
                 double Passagens = double.Parse(txtPassagens.Text);
                 double DescontoValeTransporte = salario * 0.06;
                 double GastoValeTransport = (ValorDaPassagens * Passagens) * 20;
-
                 if (DescontoValeTransporte > GastoValeTransport)
                 {
                     lblResultado.Text = "O VALOR DO DESCONTO SERÁ DE : R$" + DescontoValeTransporte;
@@ -60,15 +58,12 @@ namespace iRh.Windows.Simuladores
                     lblResultado2.Text = "VALE A PENA UTILIZAR O BENEFÍCIO";
                     panel1.Visible = true;
                 }
-
-
             }
             catch(Exception)
             {
                 MessageBox.Show("Preencha todos os campos Corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -9,7 +9,6 @@ namespace iRh.Windows.Simuladores
         {
             InitializeComponent();
         }
-
         private void buttonResultado_Click(object sender, EventArgs e)
         {
             progressBarCarregar.Visible = true;
@@ -23,7 +22,6 @@ namespace iRh.Windows.Simuladores
 
             try
             {
-                
                 if (string.IsNullOrEmpty(txtVezesSolicitados.Text))
                 {
                     MessageBox.Show("Informe vezes solicitadas.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -102,15 +100,12 @@ namespace iRh.Windows.Simuladores
                         panel1.Visible = true;
                     }
                 }
-
-
             }
             catch(Exception)
             {
                 MessageBox.Show("Preencha todos os Corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();

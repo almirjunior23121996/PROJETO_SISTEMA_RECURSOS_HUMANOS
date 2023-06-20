@@ -10,7 +10,6 @@ namespace iRh.Windows.Simuladores
         {
             InitializeComponent();
         }
-       
         private void btnCalcular_Click(object sender, EventArgs e) //1 passo
         {
             progressBar1.Visible = true;
@@ -43,7 +42,6 @@ namespace iRh.Windows.Simuladores
                     var valorDoadicionalNoturno = AdicionalNoturno.Calcula(salarioValorEmConta, HorasNoturnasFeitas); //setimo passo
                     lblResultado.Text = "O VALOR DO ADICIONAL SERÁ DE: R$" + valorDoadicionalNoturno.ToString("F2");
                     panelResultado.Visible = true;
-
                     panelResultado.Show();
                 }
                 catch (Exception)
@@ -54,7 +52,6 @@ namespace iRh.Windows.Simuladores
                 }
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();

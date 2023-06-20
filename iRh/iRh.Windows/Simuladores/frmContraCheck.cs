@@ -12,10 +12,8 @@ namespace iRh.Windows.Simuladores
         {
             InitializeComponent();
         }
-
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-
             {
                 progressBar1.Visible = true;
                 progressBar1.Value = 0;
@@ -25,7 +23,6 @@ namespace iRh.Windows.Simuladores
                     Thread.Sleep(1);
                 }
                 progressBar1.Visible = false;
-
                 try
                 {
                     if (string.IsNullOrEmpty(txtSalario.Text))
@@ -64,7 +61,6 @@ namespace iRh.Windows.Simuladores
                     {
                         descontoValeTransporte = ValeTransporte.Calcula(salario);
                     }
-
                     var descontoInss = Inss.Calcula(salario);
                     var calculoIrrf = salario + horasExtras + valorAdicionalNoturno;
                     var inpostoIrrf = Irrf.Calcula(calculoIrrf);
@@ -105,7 +101,6 @@ namespace iRh.Windows.Simuladores
                 }
                 catch (Exception)
                 {
-
                     MessageBox.Show("Preencha todos os campos Corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }

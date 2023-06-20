@@ -12,7 +12,6 @@ namespace iRh.Windows.Simuladores
         {
             InitializeComponent();
         }
-
         private void btnCalcularFtgs_Click(object sender, EventArgs e)
         {
             progressBarCarregar.Visible = true;
@@ -23,7 +22,6 @@ namespace iRh.Windows.Simuladores
                 Thread.Sleep(1);
             }
             progressBarCarregar.Visible = false;
-
             if (string.IsNullOrEmpty(txtValorEmConta.Text))
             {
                 MessageBox.Show("Informe um valor.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -41,12 +39,9 @@ namespace iRh.Windows.Simuladores
                 catch (Exception)
                 {
                     MessageBox.Show("Preecha todos os campos Corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    
-                    
                 }
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -12,11 +12,9 @@ namespace iRh.Windows.Simuladores
         {
             InitializeComponent();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             {
-               
                 if (string.IsNullOrEmpty(txtSalario.Text))
                 {
                     MessageBox.Show("Informe um salario.", "Atenção", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
@@ -35,12 +33,9 @@ namespace iRh.Windows.Simuladores
                     catch (Exception)
                     {
                         MessageBox.Show("Preecha Todos os Campos Corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-
                     }
                 }
             }
         }
-
     }
 }

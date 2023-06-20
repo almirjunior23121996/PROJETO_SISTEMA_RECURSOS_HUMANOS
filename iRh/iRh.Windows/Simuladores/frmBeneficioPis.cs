@@ -10,7 +10,6 @@ namespace iRh.Windows.Simuladores
         {
             InitializeComponent();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             progressBarCarregar.Visible = true;
@@ -21,7 +20,6 @@ namespace iRh.Windows.Simuladores
                 Thread.Sleep(1);
             }
             progressBarCarregar.Visible = false;
-
             try
             {
                 if (string.IsNullOrEmpty(txtSalario.Text))
@@ -45,7 +43,6 @@ namespace iRh.Windows.Simuladores
                 double Salario = double.Parse(txtSalario.Text);
                 double MesesTrabalhando = double.Parse(txtMesesTrabalhando.Text);
                 double AnosDeCarteiraAssinada = double.Parse(txtAnosDeCarteiraAssinada.Text);
-
                 const double SalarioMinimo = 1320.00;
                 double MediaSalario = (Salario * MesesTrabalhando) / MesesTrabalhando;
                 double ValorReceber;
@@ -74,7 +71,6 @@ namespace iRh.Windows.Simuladores
                 MessageBox.Show("Preencha todos os campos Corretamente.","Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
             this.Close();

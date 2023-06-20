@@ -12,7 +12,6 @@ namespace iRh.Windows.Simuladores
         {
             InitializeComponent();
         }
-
         private void button1Resultado_Click(object sender, EventArgs e)
         {
             progressBarCarregar.Visible = true;
@@ -25,7 +24,6 @@ namespace iRh.Windows.Simuladores
             progressBarCarregar.Visible = false;
             try 
             {
-
                 if (string.IsNullOrEmpty(txtSalario.Text))
                 {
                     MessageBox.Show("Informe seu salario.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -47,28 +45,20 @@ namespace iRh.Windows.Simuladores
                     lblResultado.Text = "O NÚMERO MÁXIMO DE DIAS QUE PODEM SER VENDIDOS É 10 \n" + "TENTE NOVAMENTE!";
                     return;
                 }
-
                var valorFeriasBruto = (vendaFerias * valorDoDia) + (salario / 3) + (vendaFerias * valorDoDia) / 3;
-                
                 var valorFeriasComSalario = valorFeriasBruto + salario;
                 var descontoInss = Inss.Calcula(valorFeriasComSalario);
                 var salarioComDescontoInss = valorFeriasComSalario - descontoInss;
                 var descontoIrrf = Irrf.Calcula(salarioComDescontoInss);
                 salario = (valorFeriasComSalario - descontoInss) - descontoIrrf;
-
                 lblResultado.Text = "VOCÊ RECEBERÁ " + salario.ToString("F2") + " DE FÉRIAS";
                 panel1Resultado.Visible = true;
-
-
-
-
             }
             catch(Exception)
             {
                 MessageBox.Show("Preencha todos os campos Corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();

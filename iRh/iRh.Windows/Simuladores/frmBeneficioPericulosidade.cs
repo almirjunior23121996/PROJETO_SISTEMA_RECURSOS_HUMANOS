@@ -22,7 +22,6 @@ namespace iRh.Windows.Simuladores
                 Thread.Sleep(1);
             }
             progressBarCarregar.Visible = false;
-
             try 
             {
                 if (string.IsNullOrEmpty(txtSalario.Text))
@@ -42,15 +41,12 @@ namespace iRh.Windows.Simuladores
                 var adicionalPericulosidade2 = Periculosidade.Calcula(salario, horasPericulosidade2);
                 labelResultado.Text = "O VALOR DO SEU ADICIONAL SERÁ DE :R$" + adicionalPericulosidade2.ToString("F2");
                 panelResultado.Visible = true;
-                
-
             }
             catch(Exception)
             {
                 MessageBox.Show("Preencha todos os campos Corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();

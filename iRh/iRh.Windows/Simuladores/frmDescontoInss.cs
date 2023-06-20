@@ -11,7 +11,6 @@ namespace iRh.Windows.Simuladores
         {
             InitializeComponent();
         }
-
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             progressBarCarregar.Visible = true;
@@ -40,11 +39,8 @@ namespace iRh.Windows.Simuladores
             catch (Exception)
             {
                 MessageBox.Show("Preencha todos os campos Corretamente.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            
             }
-        
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
